@@ -13,6 +13,10 @@ import { Col, Row } from "antd";
 import SectionTwo from "./SectionTwo";
 import { WhatsAppOutlined } from "@ant-design/icons";
 import SectionThree from "./SectionThree";
+import SectionFour from "./SectionFour";
+import SectionFive from "./SectionFive";
+import SectionSix from "./SectionSix";
+import SectionSeven from "./SectionSeven";
 export default function Home() {
   const { t } = useTranslation();
   const dir = Cookies.get("i18next") || "en";
@@ -105,7 +109,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div data-aos="fade-up">
+        <div className="SectionOne" data-aos="fade-up">
           <Row style={{ marginTop: "10%" }}  align="middle">
             <Col xs={24} md={12}>
               <div>
@@ -141,6 +145,14 @@ export default function Home() {
       <SectionTwo />
 
       <SectionThree />
+
+      <SectionFour />
+
+      <SectionFive />
+
+      <SectionSix />
+
+      <SectionSeven />
     </>
   );
 }

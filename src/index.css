@@ -9,7 +9,8 @@
   --backgroundFooter: rgba(0, 0, 0, 1);
   --backgroundAll: #ffffff;
   --imgColor: transparent;
-  --colorTextP : rgb(10 11 26 / 70%)
+  --colorTextP: rgb(10 11 26 / 70%);
+  --backgroundPage1: #f1f1f1;
 }
 
 .dark {
@@ -19,21 +20,27 @@
   --backgroundImage: rgba(40, 40, 40, 1);
   --backgroundPage: rgba(20, 20, 20, 0.849);
   --backgroundFooter: rgba(24, 24, 24, 1);
-  --backgroundAll: #1e1e1e;
+  --backgroundAll: #272727;
   --imgColor: rgba(0, 0, 0, 0.767);
-  --colorTextP:rgb(215 215 215 / 70%)
+  --colorTextP: rgb(215 215 215 / 70%);
+  --backgroundPage1: transparent;
 }
-*{
+
+* {
   box-sizing: border-box;
 }
+
 body {
   background-color: var(--backgroundPage);
   margin: 0px;
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+
 }
+
 h1,
 h2,
 h3,
@@ -44,23 +51,27 @@ div {
   color: var(--colorText);
 }
 
-p{
-   color: var(--colorTextP);
+h4{
+  opacity: 0.7;
+
+}
+
+p {
+  color: var(--colorTextP);
 }
 
 hr {
   border-color: var(--colorText);
 }
+
 .HomeSection {
-   background-image: linear-gradient(var(--imgColor), var(--imgColor)), url(./Image/5594016.jpg);
-   background-size: cover; /* يجعل الصورة تغطي كامل العنصر */
-   background-position: center; /* يحدد موضع الصورة في منتصف العنصر */
-   background-repeat: no-repeat; /* يمنع تكرار الصورة */
-   min-height: 100vh; /* يحدد الارتفاع ليكون ارتفاع الشاشة بالكامل */
-   margin: 0; /* إزالة أي هوامش */
-   padding: 0; /* إزالة أي حشوات */
-   overflow: auto;
- }
+  background-image: linear-gradient(var(--imgColor), var(--imgColor)), url(./Image/5594016.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: auto;
+}
 
 .demo-logo img {
   margin: 20px 15px 0px;
@@ -89,66 +100,224 @@ hr {
   backdrop-filter: blur(5px);
   padding-bottom: 10px;
   position: fixed;
-  top: 0; 
+  top: 0;
   width: 100%;
   box-shadow: 1px 1px 1px 1px var(--colorBorder);
-  z-index: 999; 
+  z-index: 999;
 }
 
 .textSection1 button {
-   text-align: center !important;
-   width: 140px;
-   height: 35px;
-   border-radius: 15px;
-   border-color: transparent;
-   background-image: linear-gradient(to right, #6a11cb, #2575fc); 
-   color: white; 
-   border: none; 
-   font-size: 13px;
-   cursor: pointer; 
-   transition: all 0.5s ease;
-   margin: 25px 0px;
+  text-align: center !important;
+  width: 150px;
+  height: 35px;
+  border-radius: 15px;
+  border-color: transparent;
+  background-image: linear-gradient(to right, #6a34a3, #2575fc);
+  color: white;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin: 25px 0px;
 
 }
 
 .textSection1 button:hover {
-   background-image: linear-gradient(to right, #2575fc, #6a11cb);
+  background-image: linear-gradient(to right, #2575fc,  #6a34a3);
 }
-.flag{
-   margin-top: 2px;
-   cursor: pointer;
+
+.flag {
+  margin-top: 2px;
+  cursor: pointer;
 }
 
 .SectionTwo {
-  max-width:  45%;
-  margin: 150px auto ; 
+  max-width: 45%;
+  margin: 150px auto 50px;
   text-align: center !important;
 
 }
 
-.SectionThree{
-  margin: 150px 0px ; 
+.SectionThree {
+  margin: 20px 0px 50px;
 
 }
-.SectionTwo h1{
+
+.SectionTwo h1 {
   letter-spacing: -1px;
 }
 
-@media (max-width: 767px) {
-   .textSection1 {
-      text-align: center !important;
-      width: 70%;
-      margin: 40px auto 0px !important;
-   }
-   .textSection1 h1 {
-     font-size: 25px !important;
-      
-   }
-   .SectionButtonOne{
-      justify-content: center;
-   }
-   .SectionTwo {
-    max-width:  80%;
+.SectionFour {
+  margin: 120px 0px;
+}
 
+.SectionFourContainer {
+  background-color: var(--backgroundAll);
+  padding: 15px;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+  min-height: 110px;
+  font-size: 14px;
+  opacity: 0.7;
+  letter-spacing: -0.5px;
+  box-shadow: -1px 2px 7px -4px var(--colorText)
+}
+
+.SectionFourContainer:hover {
+  transform: translate(-2px, 3px);
+}
+
+.SectionFive {
+  margin: 200px 0px;
+}
+
+.swiper {
+  width: 40%;
+  min-height: 70px;
+  background-color: var(--backgroundAll) !important;
+  border-radius: 20px;
+  margin-top: 40px;
+  box-shadow: -1px 2px 7px -4px var(--colorText)
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 12px;
+  background: var(--backgroundAll);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px 30px;
+  opacity: 0.7;
+}
+
+.mySwiper2 .swiper-slide {
+  text-align: center;
+  font-size: 12px;
+  background: var(--backgroundAll);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px 30px;
+  border-radius: 15px;
+  box-shadow: -1px 2px 7px -4px var(--colorText)
+
+}
+
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(67, 86, 151, 0.918) !important;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+}
+
+.mySwiper2{
+  background-color: var(--backgroundPage1) !important;
+  width: 70%;
+  box-shadow: -1px 2px 7px -4px  transparent
+}
+
+.mySwiper2 .swiper-slide{
+  width: 200px !important;
+  min-height: 100px;
+}
+
+.SectionOne{
+  margin-top: 180px;
+}
+
+.SectionSix h4{
+  width: 70%;
+  margin:  0px auto;
+  text-align: center;
+}
+
+
+.SectionSeven{
+  margin: 120px 0px;
+}
+
+.SectionSevenContaier{
+  background-color: var(--backgroundAll) !important;
+  border-radius: 15px;
+  box-shadow: -1px 2px 7px -4px  var(--colorText);
+  padding: 20px;
+
+}
+
+.SectionSevenContaier button{
+  width: 100%;
+  height: 25px;
+  background-image: linear-gradient(to right, #6a34a3, #2575fc);
+  transition: all 0.5s ease;
+  margin: 25px 0px 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-color: transparent;
+  border: none;
+  color: white;
+}
+
+
+
+.SectionSevenContaier button:hover {
+  background-image: linear-gradient(to right, #2575fc,  #6a34a3);
+}
+
+
+@media (max-width: 767px) {
+  .textSection1 {
+    text-align: center !important;
+    width: 70%;
+    margin: 40px auto 0px !important;
+  }
+
+  .textSection1 h1 {
+    font-size: 25px !important;
+
+  }
+
+  .SectionButtonOne {
+    justify-content: center;
+  }
+
+  .SectionTwo {
+    max-width: 80%;
+
+  }
+  .swiper {
+    width: 95%;
+  }
+  .mySwiper2{
+    background-color: var(--backgroundPage1) !important;
+    width: 90%;
+  }
+  .SectionOne{
+    margin-top: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:1300px) {
+  .swiper {
+    width: 60%;
+    height: 100px;
+    background-color: var(--backgroundAll) !important;
+    border-radius: 20px;
+  }
+
+  .SectionFourContainer {
+    min-height: 150px;
+
+  }
+  .mySwiper2{
+    background-color: var(--backgroundPage1) !important;
+  }
+
+  .SectionOne{
+    margin-top: 165px;
   }
 }

@@ -11,9 +11,11 @@ import "aos/dist/aos.css";
 
 const App = () => {
   const {dark} = useContext(contextDarkMode)
-
   useEffect(()=>{
-    Aos.init({duration:2000})
+    Aos.init({
+      duration:1500,
+      once: true, 
+    })
   },[])
   return (
     <ConfigProvider theme={dark  ? LIGHT_ANT_THEME : DARK_ANT_THEME}>
