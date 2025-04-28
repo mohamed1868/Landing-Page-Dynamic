@@ -17,6 +17,10 @@ import SectionFour from "./SectionFour";
 import SectionFive from "./SectionFive";
 import SectionSix from "./SectionSix";
 import SectionSeven from "./SectionSeven";
+import SectionEight from "./SectionEight";
+import Link from "antd/es/typography/Link";
+import SectionNine from "./SectionNine";
+import Footer from "./Footer";
 export default function Home() {
   const { t } = useTranslation();
   const dir = Cookies.get("i18next") || "en";
@@ -126,7 +130,10 @@ export default function Home() {
                 <p>{t("TitleTwoSectionHome")}</p>
                 <Row gutter={20} className="SectionButtonOne">
                   <Col >
-                    <button>{t("StartYourInvestment")}</button>
+                  <Link href="#SectionEight">
+                  <button>{t("StartYourInvestment")}</button>
+                  </Link>
+                    
                   </Col>
                   <Col >
                     <button onClick={openWhatsApp}>
@@ -153,6 +160,12 @@ export default function Home() {
       <SectionSix />
 
       <SectionSeven />
+
+      <SectionEight />
+
+      <SectionNine />
+
+      <Footer />
     </>
   );
 }

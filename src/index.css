@@ -51,7 +51,7 @@ div {
   color: var(--colorText);
 }
 
-h4{
+h4 {
   opacity: 0.7;
 
 }
@@ -123,7 +123,7 @@ hr {
 }
 
 .textSection1 button:hover {
-  background-image: linear-gradient(to right, #2575fc,  #6a34a3);
+  background-image: linear-gradient(to right, #2575fc, #6a34a3);
 }
 
 .flag {
@@ -201,7 +201,6 @@ hr {
   padding: 20px 10px 30px;
   border-radius: 15px;
   box-shadow: -1px 2px 7px -4px var(--colorText)
-
 }
 
 
@@ -215,41 +214,41 @@ hr {
   height: 7px;
 }
 
-.mySwiper2{
+.mySwiper2 {
   background-color: var(--backgroundPage1) !important;
   width: 70%;
-  box-shadow: -1px 2px 7px -4px  transparent
+  box-shadow: -1px 2px 7px -4px transparent
 }
 
-.mySwiper2 .swiper-slide{
+.mySwiper2 .swiper-slide {
   width: 200px !important;
   min-height: 100px;
 }
 
-.SectionOne{
+.SectionOne {
   margin-top: 180px;
 }
 
-.SectionSix h4{
+.SectionSix h4 {
   width: 70%;
-  margin:  0px auto;
+  margin: 0px auto;
   text-align: center;
 }
 
 
-.SectionSeven{
+.SectionSeven {
   margin: 120px 0px;
 }
 
-.SectionSevenContaier{
+.SectionSevenContaier {
   background-color: var(--backgroundAll) !important;
   border-radius: 15px;
-  box-shadow: -1px 2px 7px -4px  var(--colorText);
+  box-shadow: -1px 2px 7px -4px var(--colorText);
   padding: 20px;
 
 }
 
-.SectionSevenContaier button{
+.SectionSevenContaier button {
   width: 100%;
   height: 25px;
   background-image: linear-gradient(to right, #6a34a3, #2575fc);
@@ -265,11 +264,96 @@ hr {
 
 
 .SectionSevenContaier button:hover {
-  background-image: linear-gradient(to right, #2575fc,  #6a34a3);
+  background-image: linear-gradient(to right, #2575fc, #6a34a3);
+}
+
+.SectionEightContainer {
+  background-color: var(--backgroundAll);
+  width: 40%;
+  margin: 0px auto;
+  padding: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: -1px 2px 7px -4px var(--colorText);
+}
+
+.SectionEight .Text {
+  background-image: linear-gradient(to right, #6a34a378, #2575fca6);
+  width: 40%;
+  margin: 0px auto;
+  padding: 10px;
+  letter-spacing: -0.5px;
+  font-size: 13px;
+  box-shadow: -1px 2px 7px -4px var(--colorText);
+
+
+}
+
+.SectionEight .Text div {
+  color: rgb(22, 20, 20) !important;
+  min-height: 30px;
+}
+
+.SectionEightContainer form {
+  margin: 0px auto;
+
+
+}
+.SectionEightContainer form input{
+  font-size: 12px !important;
+}
+
+.SectionEightContainer form button {
+  background-image: linear-gradient(to right, #6a34a378, #2575fca6);
+  color: rgb(22, 20, 20) !important;
+}
+
+.SectionEightContainer form input::placeholder ,.SectionNineContainer .ant-select-selection-placeholder
+,.SectionEightContainer .ant-select-selector .ant-select-selection-placeholder,
+.SectionNineContainer .ant-select-selector .ant-select-selection-placeholder{
+  color: var(--colorText) !important;
+}
+
+.SectionEightContainer form button:hover {
+  background-image: linear-gradient(to right, #2575fca6, #6a34a378);
+}
+
+.SectionNine{
+  margin: 120px 0px;
+}
+
+.SectionNine .SectionNineContainer{
+  width: 50%;
+  margin: 20px auto 0px;
+  border-radius: 10px;
+
+}
+
+.SectionNine .SectionNineContainer .ant-collapse{
+  border-color: transparent;
+  background-color: transparent;
+}
+.SectionNineContainer .ant-collapse-item {
+  box-shadow: -1px 2px 7px -4px var(--colorText);
+  background-color: var(--backgroundAll) ;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.Footer{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 10px;
+  border-top: 1px solid var(--colorBorder);
+  padding: 20px 0px;
 }
 
 
 @media (max-width: 767px) {
+
+  .SectionNine .SectionNineContainer{
+    width: 90%;}
   .textSection1 {
     text-align: center !important;
     width: 70%;
@@ -289,19 +373,40 @@ hr {
     max-width: 80%;
 
   }
+
   .swiper {
     width: 95%;
   }
-  .mySwiper2{
+
+  .mySwiper2 {
     background-color: var(--backgroundPage1) !important;
     width: 90%;
   }
-  .SectionOne{
+
+  .SectionOne {
     margin-top: 150px;
+  }
+
+  .SectionEightContainer {
+    width: 80%;
+  }
+
+  .SectionEight .Text {
+    width: 80%;
   }
 }
 
 @media (min-width: 768px) and (max-width:1300px) {
+  .SectionNine .SectionNineContainer{
+    width: 70%;}
+  .SectionEightContainer {
+    width: 60%;
+  }
+
+  .SectionEight .Text {
+    width: 60%;
+  }
+
   .swiper {
     width: 60%;
     height: 100px;
@@ -313,11 +418,12 @@ hr {
     min-height: 150px;
 
   }
-  .mySwiper2{
+
+  .mySwiper2 {
     background-color: var(--backgroundPage1) !important;
   }
 
-  .SectionOne{
+  .SectionOne {
     margin-top: 165px;
   }
 }

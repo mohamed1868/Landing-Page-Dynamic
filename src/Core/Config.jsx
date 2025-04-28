@@ -3,7 +3,6 @@ import { theme } from 'antd';
 const LIGHT_ANT_THEME = {
     algorithm: theme.defaultAlgorithm,
     token: {
-      colorPrimary: "rgba(219, 68, 68, 1)", 
       colorText: "rgba(0, 0, 0, 1)", 
       colorBorder: "rgba(0, 0, 0, 0.3)", 
       colorBgBase: "#FFFFFF", 
@@ -14,8 +13,6 @@ const LIGHT_ANT_THEME = {
       },
       Menu: {
         colorItemText: "rgba(0, 0, 0, 1)", 
-        colorItemTextSelected: "rgba(219, 68, 68, 1)", 
-        colorItemTextHover: "rgba(219, 68, 68, 1)", 
         borderRadius: 10,
       },
       Header: {
@@ -34,7 +31,6 @@ const LIGHT_ANT_THEME = {
 const DARK_ANT_THEME = {
 
     token: {
-      colorPrimary: "rgba(219, 68, 68, 1)",
       colorText: "rgba(255, 255, 255, 0.87)",
       colorBorder: "rgba(255, 255, 255, 0.2)",
       colorBgBase: "#1E1E1E ",
@@ -47,8 +43,6 @@ const DARK_ANT_THEME = {
       },
       Menu: {
         colorItemText: "rgba(255, 255, 255, 0.87)", 
-        colorItemTextSelected: "rgba(219, 68, 68, 1)", 
-        colorItemTextHover: "rgba(219, 68, 68, 1)", 
         borderRadius: 10,
       },
       Header: {

@@ -9,7 +9,7 @@ i18n
   .use(HttpApi)
   .init({
 
-    fallbackLng: "en",
+    fallbackLng: "ar",
     detection: {
       order: ['cookie' ,'htmlTag' , 'querystring', 'localStorage', 'navigator' ],
       caches: ['cookie'],
