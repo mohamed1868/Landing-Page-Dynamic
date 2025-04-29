@@ -50,7 +50,7 @@ export default function Home() {
   }
 
   function openWhatsApp() {
-    const phoneNumber = "+201145694211";
+    const phoneNumber = "+201283188882";
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
   }
 
@@ -151,7 +151,7 @@ export default function Home() {
 
       <SectionTwo />
 
-      <SectionThree />
+      {/* <SectionThree /> */}
 
       <SectionFour />
 

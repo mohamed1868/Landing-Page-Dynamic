@@ -46,12 +46,7 @@ export default function SectionFour() {
            <div>{t("sectionFourPage5")} </div>
           </div>
           </Col>
-          <Col xs={24}>
-          <div style={{display:"flex" , gap:"10px"}} className="SectionFourContainer">
-            <div><CheckCircleOutlined /></div>
-           <div>{t("sectionFourPage6")} </div>
-          </div>
-          </Col>
+
         </Row>
       </Col>
 

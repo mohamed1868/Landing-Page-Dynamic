@@ -27,7 +27,6 @@ export default function SectionFive() {
                 <SwiperSlide> {t("sectionFivePage1")}</SwiperSlide>
                 <SwiperSlide>{t("sectionFivePage2")} </SwiperSlide>
                 <SwiperSlide> {t("sectionFivePage3")}</SwiperSlide>
-                <SwiperSlide> {t("sectionFivePage4")}</SwiperSlide>
             </Swiper>
 
         </div>
