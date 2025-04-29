@@ -34,7 +34,7 @@ export default function SectionEight() {
 
   return (
     <>
-      <div className="SectionEight" id="SectionEight" data-aos="fade-down">
+      <div className="SectionEight" id="SectionEight" data-aos="fade-up">
         <h1 style={{ textAlign: "center" }}> {t("sectionEightTitle")} </h1>
         <div className="Text" style={{ textAlign: "center" }}>
           <div>{t("sectionEightTitle2")}</div>

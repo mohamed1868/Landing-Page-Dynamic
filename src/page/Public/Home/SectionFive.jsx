@@ -10,8 +10,8 @@ export default function SectionFive() {
 
     return (<>
 
-        <div className='SectionFive' data-aos="fade-up">
-            <h1 style={{ textAlign: "center" }}>{t("sectionFiveTitle")}</h1>
+        <div className='SectionFive' data-aos="fade-down">
+            <h1 style={{ textAlign: "center", fontSize:'25px' }}>{t("sectionFiveTitle")}</h1>
 
 
             <Swiper

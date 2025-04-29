@@ -9,7 +9,7 @@ export default function SectionSeven() {
 
 
     return (<>
-        <div className="SectionSeven" data-aos="fade-up" id="SectionSeven">
+        <div className="SectionSeven" data-aos="fade-down" id="SectionSeven">
             <h1 style={{ textAlign: "center" }}> {t("sectionSevensectionTitle")}</h1>
             <h4 style={{ textAlign: "center" }} > {t("sectionSevenTitle2")}</h4>
             <Row style={{ gap: "25px", justifyContent: "center", marginTop: "40px" }}>
