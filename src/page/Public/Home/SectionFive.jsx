@@ -17,6 +17,7 @@ export default function SectionFive() {
             <Swiper
                 pagination={{ clickable: true }}
                 modules={[Pagination, Autoplay]}
+                 dir="rtl"
                 autoplay={{
                     delay: 2000,
                     disableOnInteraction: false,

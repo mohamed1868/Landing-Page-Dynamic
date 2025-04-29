@@ -25,6 +25,7 @@ export default function SectionSix() {
  <div>
  <Swiper
   slidesPerView={4}
+  dir="rtl"
   spaceBetween={15}
   pagination={{ clickable: true }}
   className="mySwiper2"
