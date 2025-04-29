@@ -326,6 +326,7 @@ hr {
   width: 50%;
   margin: 20px auto 0px;
   border-radius: 10px;
+  direction: rtl !important;
 
 }
 
