@@ -13,17 +13,7 @@ export default function SectionSeven() {
             <h1 style={{ textAlign: "center" }}> {t("sectionSevensectionTitle")}</h1>
             <h4 style={{ textAlign: "center" }} > {t("sectionSevenTitle2")}</h4>
             <Row style={{ gap: "25px", justifyContent: "center", marginTop: "40px" }}>
-                <Col xs={16} md={11} xl={6} className="SectionSevenContaier">
-                    <div style={{ fontWeight: "bold" }}> {t("sectionSevenPage1Title")} </div>
-                    <div style={{ opacity: "0.7", marginTop: "10px", fontSize: "12px" }}>{t("sectionSevenPage1P")}   </div>
-                    <div>
-                        <Link href="#SectionEight">
-                            <button> {t("sectionSevenPageButton")} </button>
-                        </Link>
-
-                    </div>
-                </Col>
-                <Col xs={16} md={11} xl={6} className="SectionSevenContaier">
+                <Col xs={16} md={11} xl={7} className="SectionSevenContaier">
                     <div style={{ fontWeight: "bold" }}>  {t("sectionSevenPage2Title")} </div>
                     <div style={{ opacity: "0.7", marginTop: "10px", fontSize: "12px" }}> {t("sectionSevenPage2P")}       </div>
                     <div>
@@ -33,16 +23,7 @@ export default function SectionSeven() {
 
                     </div>
                 </Col>
-                <Col xs={16} md={11} xl={6} className="SectionSevenContaier">
-                    <div style={{ fontWeight: "bold" }}>  {t("sectionSevenPage3Title")}  </div>
-                    <div style={{ opacity: "0.7", marginTop: "10px", fontSize: "12px" }}> {t("sectionSevenPage3P")}   </div>
-                    <div>
-                        <Link href="#SectionEight">
-                            <button>  {t("sectionSevenPageButton")} </button>
-                        </Link>
 
-                    </div>
-                </Col>
             </Row>
         </div>
 

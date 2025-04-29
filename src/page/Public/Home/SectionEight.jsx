@@ -94,9 +94,7 @@ export default function SectionEight() {
               ]}
             >
               <Select placeholder={t("sectionEightInputpackage")} allowClear>
-                <Option value="الباقة الفضية">الباقة الفضية</Option>
                 <Option value="الباقة الذهبية">الباقة الذهبية</Option>
-                <Option value="الباقة البلاتينية">الباقة البلاتينية</Option>
               </Select>
             </Form.Item>
 
