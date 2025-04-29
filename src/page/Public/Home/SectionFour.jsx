@@ -12,18 +12,19 @@ export default function SectionFour() {
      
       <Col xs={16} md={10} lg={8} xl={7}>
         <Row style={{gap:"15px"}}>
+        <Col xs={24}>
+          <div style={{display:"flex" , gap:"10px"}} className="SectionFourContainer">
+            <div><CheckCircleOutlined /></div>
+           <div>{t("sectionFourPage2")} </div>
+          </div>
+          </Col>
           <Col xs={24}>
           <div style={{display:"flex" , gap:"10px"}} className="SectionFourContainer">
             <div><CheckCircleOutlined /></div>
             <div>{t("sectionFourPage1")} </div>
           </div>
           </Col>
-          <Col xs={24}>
-          <div style={{display:"flex" , gap:"10px"}} className="SectionFourContainer">
-            <div><CheckCircleOutlined /></div>
-           <div>{t("sectionFourPage2")} </div>
-          </div>
-          </Col>
+
           <Col xs={24}>
           <div style={{display:"flex" , gap:"10px"}} className="SectionFourContainer">
             <div><CheckCircleOutlined /></div>
@@ -34,18 +35,19 @@ export default function SectionFour() {
       </Col>
       <Col xs={16} md={10} lg={8} xl={7}>
       <Row  style={{gap:"15px"}}>
+      <Col xs={24}>
+          <div style={{display:"flex" , gap:"10px"}} className="SectionFourContainer">
+            <div><CheckCircleOutlined /></div>
+           <div>{t("sectionFourPage5")} </div>
+          </div>
+          </Col>
           <Col xs={24}>
           <div style={{display:"flex" , gap:"10px"}} className="SectionFourContainer">
             <div><CheckCircleOutlined /></div>
            <div>{t("sectionFourPage4")} </div>
           </div>
           </Col>
-          <Col xs={24}>
-          <div style={{display:"flex" , gap:"10px"}} className="SectionFourContainer">
-            <div><CheckCircleOutlined /></div>
-           <div>{t("sectionFourPage5")} </div>
-          </div>
-          </Col>
+
 
         </Row>
       </Col>
