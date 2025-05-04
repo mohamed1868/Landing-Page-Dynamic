@@ -17,8 +17,8 @@ export default function SectionFive() {
 
             <Row style={{ gap: "25px", justifyContent: "center", marginTop: "80px" }}>
                 <Col xs={16} md={11} xl={7} className="SectionSevenContaier1">
-                    <div style={{ display: "flex" }}>
-                        <div>
+                    <div style={{ display: "flex" }} >
+                        <div className="iconSection">
                             <DotLottieReact
                                 src="https://lottie.host/82e2edf3-dc02-48bc-badf-f423d44d36df/np77VTUCUJ.lottie"
                                 loop
@@ -32,7 +32,7 @@ export default function SectionFive() {
                 </Col>
                 <Col xs={16} md={11} xl={7} className="SectionSevenContaier1">
                     <div style={{ display: "flex" }}>
-                        <div style={{ width: "28%", }}>
+                        <div style={{ width: "28%" }} className="iconSection">
                             <DotLottieReact
                                 src="https://lottie.host/cb7b7614-5723-4e55-90ff-965ccf33a762/NzcnIGWNw5.lottie"
                                 loop
@@ -47,7 +47,7 @@ export default function SectionFive() {
                 </Col>
                 <Col xs={16} md={11} xl={7} className="SectionSevenContaier1">
                     <div style={{ display: "flex" }}>
-                        <div style={{ width: "28%", }}>
+                        <div style={{ width: "28%" }} className="iconSection">
                             <DotLottieReact
                                 src="https://lottie.host/d93abb40-bbbc-4fed-a642-40e01bd6f8c0/NXC14S8p2k.lottie"
                                 loop

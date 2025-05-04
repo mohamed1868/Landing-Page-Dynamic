@@ -1,14 +1,21 @@
 import Link from "antd/es/typography/Link";
 import logoImg from "../../../Image/logo.png"
+import logoImgDark from "../../../Image/Untitled-2.png-white.png"
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { contextDarkMode } from "../../Context/DarkMode";
 
 export default function Footer() {
     const { t } = useTranslation()
+    const {dark} = useContext(contextDarkMode)
 
     return (<>
         <div className="Footer">
-            <div style={{ marginTop: "30px" , textAlign:"center" }}>
-                <img src={logoImg} alt="Logo" width={"100px"} height={"40px"} />
+            <div style={{ marginTop: "30px", textAlign: "center" }}>
+                {dark ?
+                    <img src={logoImg} alt="Logo" width={"100px"} height={"40px"} /> :
+                    <img src={logoImgDark} alt="Logo" width={"100px"} height={"40px"} />
+                }
                 <p>  {t("FooterCol3Text1")} </p>
 
             </div>

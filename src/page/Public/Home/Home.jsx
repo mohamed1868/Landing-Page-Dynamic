@@ -8,6 +8,7 @@ import imgFlagEG from "../../../Image/pngtree-egypt-round-flag-glossy-glass-effe
 import imgFlagEN from "../../../Image/pngtree-american-flag-usa-circle-icon-png-image_4742100.png";
 import imgSun from "../../../Image/pngtree-sun-png-clipart-colored-png-image_5656301.png";
 import imgMoon from "../../../Image/pngtree-the-surface-of-a-round-moon-png-image_5955908.png";
+import imgLogoDark from "../../../Image/Untitled-2.png-white.png"
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Col, Row } from "antd";
 import SectionTwo from "./SectionTwo";
@@ -21,12 +22,13 @@ import SectionEight from "./SectionEight";
 import Link from "antd/es/typography/Link";
 import SectionNine from "./SectionNine";
 import Footer from "./Footer";
+
 export default function Home() {
   const { t } = useTranslation();
   const dir = Cookies.get("i18next") || "en";
   const sun = useRef();
   const moon = useRef();
-  const { darkMode, lightMode } = useContext(contextDarkMode);
+  const { darkMode, lightMode ,dark} = useContext(contextDarkMode);
 
   useEffect(() => {
     window.document.dir = i18n.dir();
@@ -65,7 +67,8 @@ export default function Home() {
       <div className="HomeSection">
         <div className="header">
           <div className="demo-logo">
-            <img src={imgLogo} alt="logo" height={"30px"} />
+            {dark ? <img src={imgLogo} alt="logo" height={"30px"} /> : <img src={imgLogoDark} alt="logo" height={"30px"} />}
+         
           </div>
           <div style={{ display: "flex", marginTop: "20px" }}>
             {dir == "en" ? (
@@ -124,7 +127,7 @@ export default function Home() {
                 />
               </div>
             </Col>
-            <Col xs={24} md={9}>
+            <Col xs={24} md={12} xl={9}>
               <div className="textSection1" style={{ marginTop: "2%" }}>
                 <h1 style={{ fontSize: "35px" }}>{t("TitleOneSectionHome")}</h1>
                 <p style={{fontSize:"18px"}} >{t("TitleTwoSectionHome")}</p>
@@ -144,7 +147,7 @@ export default function Home() {
                 </Row>
               </div>
             </Col>
-            <Col xs={24} md={2}></Col>
+            <Col xs={24} xl={2}></Col>
           </Row>
         </div>
       </div>

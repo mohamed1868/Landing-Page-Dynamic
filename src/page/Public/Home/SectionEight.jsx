@@ -1,16 +1,20 @@
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Button, Form, Input, Select } from "antd";
+import { useState } from "react";
 import toast from "react-hot-toast";
 import { useTranslation } from "react-i18next";
 const { Option } = Select;
 
 export default function SectionEight() {
   const { t } = useTranslation();
+  const [loading, setLoading] = useState(false)
 
   const onFinish = async (values) => {
     const formData = {
       ...values,
       access_key: "84be3961-95a8-432f-a781-9eaad46bfc24"
     };
+    setLoading(true)
 
     const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -22,10 +26,12 @@ export default function SectionEight() {
     }).then((res) => res.json());
 
     if (res.success) {
-        toast.success('Successfully Send')
-       
+      toast.success('Successfully Send')
+      setLoading(false)
+
     } else {
-        toast.error("Try Again")
+      toast.error("Try Again")
+      setLoading(false)
     }
   };
   const onFinishFailed = (errorInfo) => {
@@ -100,11 +106,18 @@ export default function SectionEight() {
 
             <Form.Item>
               <Button
-                style={{ width: "100%" }}
+                style={{ width: "100%" ,fontSize:"16px"}}
                 type="primary"
                 htmlType="submit"
               >
-                {t("submit")}
+                {!loading ?
+                  t("submit")
+                  : <DotLottieReact
+                    src="https://lottie.host/3bedc656-8119-46af-b479-abcddbd17823/DHl40dPNmM.lottie"
+                    loop
+                    autoplay
+                  />}
+
               </Button>
             </Form.Item>
           </Form>

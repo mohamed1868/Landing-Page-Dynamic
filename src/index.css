@@ -338,7 +338,10 @@ hr {
 
 
 @media (max-width: 767px) {
+ .iconSection {
 
+  display: none;
+ }
   .SectionNine .SectionNineContainer{
     width: 90%;}
   .textSection1 {
