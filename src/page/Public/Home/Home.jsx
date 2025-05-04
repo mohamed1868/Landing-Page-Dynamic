@@ -117,7 +117,7 @@ export default function Home() {
 
         <div className="SectionOne" data-aos="fade-up">
           <Row style={{ marginTop: "10%" }} align="middle">
-            <Col xs={24} md={12}>
+            <Col xs={24} md={11} lg={12}>
               <div>
                 <DotLottieReact
                   src="https://lottie.host/d6b0a816-74f6-419f-a90f-97c09c3eb128/AVVqJBtdJO.lottie"
@@ -126,7 +126,7 @@ export default function Home() {
                 />
               </div>
             </Col>
-            <Col xs={24} md={12} xl={9}>
+            <Col xs={24} md={12} lg={9}>
               <div className="textSection1" style={{ marginTop: "2%" }}>
                 <h1 style={{ fontSize: "35px" }}>{t("TitleOneSectionHome")}</h1>
                 <p style={{ fontSize: "18px" }} >{t("TitleTwoSectionHome")}</p>
