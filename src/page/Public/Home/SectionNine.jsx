@@ -1,3 +1,4 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { Collapse } from 'antd';
 import { useTranslation } from 'react-i18next';
 const items = [
@@ -123,9 +124,20 @@ export default function SectionNine() {
     };
 
     return (<>
-        <div className="SectionNine" id='SectionNine'  data-aos="fade-down">
+        <div className="SectionNine" id='SectionNine' data-aos="fade-down">
+            <div style={{display:"flex" , justifyContent:"center"}}>
+                <div style={{width:"8%"}}>
+                    <DotLottieReact
+                        src="https://lottie.host/a28b775b-9c85-4d9d-9aa9-00c7df430c59/2I8GfEApBs.lottie"
+                        loop
+                        autoplay
+                    />
+                </div>
+                <div>
+                    <h1 style={{ textAlign: "center" }}> {t("sectionNineTitle")} </h1>
+                </div>
+            </div>
 
-            <h1 style={{ textAlign: "center" }}> {t("sectionNineTitle")} </h1>
 
             <div className='SectionNineContainer'>
                 <Collapse items={items} defaultActiveKey={['1']} onChange={onChange} />

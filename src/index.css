@@ -136,7 +136,9 @@ hr {
 .SectionTwo {
   max-width: 45%;
   margin: 150px auto 50px;
-  text-align: center !important;
+
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -147,11 +149,31 @@ hr {
 
 .SectionTwo h1 {
   letter-spacing: -1px;
+ text-align: center;
 }
+
 
 .SectionFour {
   margin: 120px 0px;
 }
+.SectionOneContainer {
+  background-color: var(--backgroundAll);
+  padding: 5px;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+  min-height: 80px;
+  font-size: 15px;
+  opacity: 0.;
+  letter-spacing: -0.5px;
+  box-shadow: -1px 2px 7px -4px var(--colorText);
+  margin: 25px 0px;
+  
+}
+
+.SectionOneContainer:hover {
+  transform: translate(-2px, 3px);
+}
+
 
 .SectionFourContainer {
   background-color: var(--backgroundAll);
@@ -173,59 +195,6 @@ hr {
   margin: 200px 0px;
 }
 
-.swiper {
-  width: 40%;
-  min-height: 70px;
-  background-color: var(--backgroundAll) !important;
-  border-radius: 20px;
-  margin-top: 40px;
-  box-shadow: -1px 2px 7px -4px var(--colorText)
-}
-
-.mySwiper .swiper-slide {
-  text-align: center;
-  font-size: 14px;
-  background: var(--backgroundAll);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 10px 30px;
-  opacity: 0.7;
-}
-
-.mySwiper2 .swiper-slide {
-  text-align: center;
-  font-size: 14px;
-  background: var(--backgroundAll);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 10px 30px;
-  border-radius: 15px;
-  box-shadow: -1px 2px 7px -4px var(--colorText)
-}
-
-
-.swiper-pagination-bullet-active {
-  background-color: rgba(67, 86, 151, 0.918) !important;
-}
-
-.swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  width: 7px;
-  height: 7px;
-}
-
-.mySwiper2 {
-  background-color: var(--backgroundPage1) !important;
-  width: 70%;
-  box-shadow: -1px 2px 7px -4px transparent
-}
-
-.mySwiper2 .swiper-slide {
-  width: 200px !important;
-  min-height: 100px;
-}
 
 .SectionOne {
   margin-top: 180px;
@@ -417,6 +386,11 @@ hr {
 
 
 @media (min-width: 768px) and (max-width:1300px) {
+  .SectionOneContainer{
+    width:700px;
+  
+
+  }
   .SectionNine .SectionNineContainer{
     width: 70%;}
   .SectionEightContainer {
