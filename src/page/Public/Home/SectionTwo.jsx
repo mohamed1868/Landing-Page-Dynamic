@@ -9,11 +9,11 @@ export default function SectionTwo() {
       <div data-aos="fade-down" className="SectionTwo">
         <div>
           <h1 >{t("WhatisVariianceholding")}</h1>
-          <div className="SectionOneContainer" style={{ display: "flex" , marginTop:"60px"}}>
+          <div className="SectionOneContainer" style={{ display: "flex", marginTop: "60px" }}>
             <div style={{ width: "14%", margin: "0px 2px" }}>
               <DotLottieReact
-      src="https://lottie.host/fd11ed4c-d0da-42f1-bfd9-fc4757624229/86HZF3Gdkw.lottie"
-      loop
+                src="https://lottie.host/fd11ed4c-d0da-42f1-bfd9-fc4757624229/86HZF3Gdkw.lottie"
+                loop
                 autoplay
               />
             </div>
@@ -25,7 +25,6 @@ export default function SectionTwo() {
             <div style={{ width: "14%", margin: "0px 2px" }}>
               <DotLottieReact
                 src="https://lottie.host/8b0f6241-9e07-4987-a13f-d8101d0d5ba9/4v4ZoMof8n.lottie"
-
                 loop
                 autoplay
               />
