@@ -125,8 +125,8 @@ export default function SectionNine() {
 
     return (<>
         <div className="SectionNine" id='SectionNine' data-aos="fade-down">
-            <div style={{display:"flex" , justifyContent:"center"}}>
-                <div style={{width:"8%"}} className="iconSection">
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <div style={{ width: "8%" }} className="iconSection">
                     <DotLottieReact
                         src="https://lottie.host/a28b775b-9c85-4d9d-9aa9-00c7df430c59/2I8GfEApBs.lottie"
                         loop

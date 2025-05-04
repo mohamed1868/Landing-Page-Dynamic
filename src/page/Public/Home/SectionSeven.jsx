@@ -14,8 +14,8 @@ export default function SectionSeven() {
             <h4 style={{ textAlign: "center" }} > {t("sectionSevenTitle2")}</h4>
             <Row style={{ gap: "25px", justifyContent: "center", marginTop: "40px" }}>
                 <Col xs={16} md={11} xl={7} className="SectionSevenContaier">
-                    <div style={{ fontWeight: "bold" }}>  {t("sectionSevenPage2Title")} </div>
-                    <div style={{ opacity: "0.7", marginTop: "10px", fontSize: "12px" }}> {t("sectionSevenPage2P")}       </div>
+                    <div style={{ fontWeight: "bold" ,fontSize: "16px"}}>  {t("sectionSevenPage2Title")} </div>
+                    <div style={{ opacity: "0.7", marginTop: "10px", fontSize: "14px" }}> {t("sectionSevenPage2P")}       </div>
                     <div>
                         <Link href="#SectionEight">
                             <button>  {t("sectionSevenPageButton")} </button>

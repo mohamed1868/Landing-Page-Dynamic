@@ -7,7 +7,7 @@ import { contextDarkMode } from "../../Context/DarkMode";
 
 export default function Footer() {
     const { t } = useTranslation()
-    const {dark} = useContext(contextDarkMode)
+    const { dark } = useContext(contextDarkMode)
 
     return (<>
         <div className="Footer">
@@ -17,7 +17,6 @@ export default function Footer() {
                     <img src={logoImgDark} alt="Logo" width={"100px"} height={"40px"} />
                 }
                 <p>  {t("FooterCol3Text1")} </p>
-
             </div>
 
             <div>

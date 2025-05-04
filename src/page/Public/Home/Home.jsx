@@ -13,7 +13,6 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Col, Row } from "antd";
 import SectionTwo from "./SectionTwo";
 import { WhatsAppOutlined } from "@ant-design/icons";
-import SectionThree from "./SectionThree";
 import SectionFour from "./SectionFour";
 import SectionFive from "./SectionFive";
 import SectionSix from "./SectionSix";
@@ -28,7 +27,7 @@ export default function Home() {
   const dir = Cookies.get("i18next") || "en";
   const sun = useRef();
   const moon = useRef();
-  const { darkMode, lightMode ,dark} = useContext(contextDarkMode);
+  const { darkMode, lightMode, dark } = useContext(contextDarkMode);
 
   useEffect(() => {
     window.document.dir = i18n.dir();
@@ -68,7 +67,7 @@ export default function Home() {
         <div className="header">
           <div className="demo-logo">
             {dark ? <img src={imgLogo} alt="logo" height={"30px"} /> : <img src={imgLogoDark} alt="logo" height={"30px"} />}
-         
+
           </div>
           <div style={{ display: "flex", marginTop: "20px" }}>
             {dir == "en" ? (
@@ -117,7 +116,7 @@ export default function Home() {
         </div>
 
         <div className="SectionOne" data-aos="fade-up">
-          <Row style={{ marginTop: "10%" }}  align="middle">
+          <Row style={{ marginTop: "10%" }} align="middle">
             <Col xs={24} md={12}>
               <div>
                 <DotLottieReact
@@ -130,13 +129,12 @@ export default function Home() {
             <Col xs={24} md={12} xl={9}>
               <div className="textSection1" style={{ marginTop: "2%" }}>
                 <h1 style={{ fontSize: "35px" }}>{t("TitleOneSectionHome")}</h1>
-                <p style={{fontSize:"18px"}} >{t("TitleTwoSectionHome")}</p>
+                <p style={{ fontSize: "18px" }} >{t("TitleTwoSectionHome")}</p>
                 <Row gutter={20} className="SectionButtonOne">
                   <Col >
-                  <Link href="#SectionEight">
-                  <button>{t("StartYourInvestment")}</button>
-                  </Link>
-                    
+                    <Link href="#SectionEight">
+                      <button>{t("StartYourInvestment")}</button>
+                    </Link>
                   </Col>
                   <Col >
                     <button onClick={openWhatsApp}>
@@ -154,13 +152,11 @@ export default function Home() {
 
       <SectionTwo />
 
-      {/* <SectionThree /> */}
-
       <SectionFour />
 
       <SectionFive />
 
-      {/* <SectionSix /> */}
+      <SectionSix />
 
       <SectionSeven />
 

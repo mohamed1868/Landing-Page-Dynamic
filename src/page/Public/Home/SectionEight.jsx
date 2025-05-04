@@ -42,8 +42,10 @@ export default function SectionEight() {
     <>
       <div className="SectionEight" id="SectionEight" data-aos="fade-up">
         <h1 style={{ textAlign: "center" }}> {t("sectionEightTitle")} </h1>
+        <h4  style={{textAlign:"center"}} >{t("sectionEightTitle3")} </h4>
         <div className="Text" style={{ textAlign: "center" }}>
           <div>{t("sectionEightTitle2")}</div>
+          
         </div>
         <div className="SectionEightContainer">
           <Form
@@ -93,20 +95,20 @@ export default function SectionEight() {
               <Input placeholder={t("sectionEightInputJop")} />
             </Form.Item>
 
-            <Form.Item
+            {/* <Form.Item
               name="Investment packages"
               rules={[
                 { required: true, message: t("sectionEightInputpackageError") }
               ]}
             >
               <Select placeholder={t("sectionEightInputpackage")} allowClear>
-                <Option value="الباقة الذهبية">الباقة الذهبية</Option>
+                <Option value="الباقة الرئيسية">{t("sectionSevenPage2Title")} </Option>
               </Select>
-            </Form.Item>
+            </Form.Item> */}
 
             <Form.Item>
               <Button
-                style={{ width: "100%" ,fontSize:"16px"}}
+                style={{ width: "100%", fontSize: "16px" }}
                 type="primary"
                 htmlType="submit"
               >
