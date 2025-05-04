@@ -36,7 +36,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: Cairo, sans-serif;
-  font-size: 17px;
+  font-size: 18px;
 
 }
 
@@ -49,12 +49,14 @@ h6,
 div {
   color: var(--colorText);
   font-family: Cairo, sans-serif;
+
 }
 
 h4 {
   opacity: 0.7;
 
 }
+
 
 p {
   color: var(--colorTextP);
@@ -240,6 +242,22 @@ hr {
   margin: 120px 0px;
 }
 
+.SectionSevenContaier1 {
+  background-color: var(--backgroundAll);
+  padding: 15px;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+  min-height: 80px;
+  font-size: 15px;
+  opacity: 0.9;
+  letter-spacing: -0.5px;
+  box-shadow: -1px 2px 7px -4px var(--colorText)
+}
+
+.SectionSevenContaier1:hover {
+  transform: translate(-2px, 3px);
+}
+
 .SectionSevenContaier {
   background-color: var(--backgroundAll) !important;
   border-radius: 15px;
@@ -397,6 +415,7 @@ hr {
   }
 }
 
+
 @media (min-width: 768px) and (max-width:1300px) {
   .SectionNine .SectionNineContainer{
     width: 70%;}
@@ -426,5 +445,70 @@ hr {
 
   .SectionOne {
     margin-top: 165px;
+  }
+
+  .textSection1 h1 {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  .textSection1 p{
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .textSection1 button {
+    text-align: center !important;
+    width: 170px;
+    height: 37px;
+    border-radius: 15px;
+    border-color: transparent;
+    background-image: linear-gradient(to right, #6a34a3, #2575fc);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 40px 0px;
+
+  
+  }
+  
+  .textSection1 button:hover {
+    background-image: linear-gradient(to right, #2575fc, #6a34a3);
+  }
+}
+
+@media (min-width: 1301px)  {
+  .SectionOne {
+    margin-top: 240px;
+  }
+   .textSection1 h1 {
+    font-size: 42px;
+    margin-top: 20px;
+  }
+  .textSection1 p{
+    font-size: 25px;
+    margin-top: 40px;
+  }
+
+  .textSection1 button {
+    text-align: center !important;
+    width: 185px;
+    height: 40px;
+    border-radius: 15px;
+    border-color: transparent;
+    background-image: linear-gradient(to right, #6a34a3, #2575fc);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 60px 0px;
+
+  
+  }
+  
+  .textSection1 button:hover {
+    background-image: linear-gradient(to right, #2575fc, #6a34a3);
   }
 }

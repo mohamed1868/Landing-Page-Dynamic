@@ -126,8 +126,8 @@ export default function Home() {
             </Col>
             <Col xs={24} md={9}>
               <div className="textSection1" style={{ marginTop: "2%" }}>
-                <h1 style={{ fontSize: "30px" }}>{t("TitleOneSectionHome")}</h1>
-                <p style={{fontSize:"16.5px"}} >{t("TitleTwoSectionHome")}</p>
+                <h1 style={{ fontSize: "35px" }}>{t("TitleOneSectionHome")}</h1>
+                <p style={{fontSize:"18px"}} >{t("TitleTwoSectionHome")}</p>
                 <Row gutter={20} className="SectionButtonOne">
                   <Col >
                   <Link href="#SectionEight">
@@ -157,7 +157,7 @@ export default function Home() {
 
       <SectionFive />
 
-      <SectionSix />
+      {/* <SectionSix /> */}
 
       <SectionSeven />
 
