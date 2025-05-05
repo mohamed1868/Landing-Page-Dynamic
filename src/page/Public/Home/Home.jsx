@@ -123,6 +123,7 @@ export default function Home() {
                   src="https://lottie.host/d6b0a816-74f6-419f-a90f-97c09c3eb128/AVVqJBtdJO.lottie"
                   loop
                   autoplay
+                  className="anminationOne"
                 />
               </div>
             </Col>
