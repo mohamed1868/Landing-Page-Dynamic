@@ -7,6 +7,7 @@
   --backgroundFooter: rgba(0, 0, 0, 1);
   --boxShadow : #acacf4;
   --backgroundAll: #ffffff;
+  --colorTextHover: #ffffff;
   --imgColor: transparent;
   --colorTextP: #504c89;
   --backgroundPage1: #f1f1f180;
@@ -24,6 +25,7 @@
   --imgColor: rgba(0, 0, 0, 0.767);
   --colorTextP: rgb(215 215 215 / 70%);
   --backgroundPage1: transparent;
+  --colorTextHover: #ffffff;
 }
 
 * {
@@ -173,7 +175,7 @@ hr {
 }
 
 .SectionOneContainer:hover  p{
-  color: var(--backgroundPage) !important;
+  color: var(--colorTextHover) !important;
 }
 
 
@@ -196,7 +198,7 @@ hr {
 
 }
 .SectionFourContainer:hover p ,.SectionFourContainer:hover div{
-  color: var(--backgroundPage) !important;
+  color: var(--colorTextHover) !important;
 } 
 
 .SectionFive {
@@ -237,7 +239,7 @@ hr {
 }
 
 .SectionSevenContaier1:hover  div{
-  color: var(--backgroundPage) !important;
+  color: var(--colorTextHover) !important;
 }
 
 
