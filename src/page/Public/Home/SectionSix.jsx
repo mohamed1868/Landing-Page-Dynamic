@@ -52,7 +52,7 @@ export default function SectionSix() {
                                         autoplay
                                    />
                               </div>
-                              <h1>Dynamic Information Technology </h1>
+                              <h1>DIT </h1>
                               <Link href="#SectionEight">
                                    <button className='buttonSectionSix'>  {t("sectionSevenPageButton")} </button>
                               </Link>
