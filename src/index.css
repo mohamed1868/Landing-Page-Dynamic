@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --colorTitle: rgba(219, 68, 68, 1);
   --colorBorder: #acacf4;

@@ -8,7 +8,7 @@ import imgFlagEG from "../../../Image/pngtree-egypt-round-flag-glossy-glass-effe
 import imgFlagEN from "../../../Image/pngtree-american-flag-usa-circle-icon-png-image_4742100.png";
 import imgSun from "../../../Image/pngtree-sun-png-clipart-colored-png-image_5656301.png";
 import imgMoon from "../../../Image/pngtree-the-surface-of-a-round-moon-png-image_5955908.png";
-import imgLogoDark from "../../../Image/Untitled-2.png-white.png"
+import imgLogoDark from "../../../Image/Untitled-2.png-white.png";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Col, Row } from "antd";
 import SectionTwo from "./SectionTwo";
@@ -21,6 +21,8 @@ import SectionEight from "./SectionEight";
 import Link from "antd/es/typography/Link";
 import SectionNine from "./SectionNine";
 import Footer from "./Footer";
+import { useState } from "react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -28,6 +30,7 @@ export default function Home() {
   const sun = useRef();
   const moon = useRef();
   const { darkMode, lightMode, dark } = useContext(contextDarkMode);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     window.document.dir = i18n.dir();
@@ -64,56 +67,98 @@ export default function Home() {
   return (
     <>
       <div className="HomeSection">
-        <div className="header">
-          <div className="demo-logo">
-            {dark ? <img src={imgLogo} alt="logo" height={"30px"} /> : <img src={imgLogoDark} alt="logo" height={"30px"} />}
 
-          </div>
-          <div style={{ display: "flex", marginTop: "20px" }}>
-            {dir == "en" ? (
-              <img
-                src={imgFlagEG}
-                alt="flag"
-                width={"22px"}
-                height={"22px"}
-                onClick={() => i18n.changeLanguage("ar")}
-                className="flag"
-                style={{ marginTop: "7px" }}
-              />
-            ) : (
-              <img
-                src={imgFlagEN}
-                alt="flag"
-                width={"30px"}
-                height={"30px"}
-                onClick={() => i18n.changeLanguage("en")}
-                className="flag"
-              />
-            )}
 
-            <div className="darkmodeicone">
-              <img
-                src={imgSun}
-                alt="sun"
-                width={"28px"}
-                height={"28px"}
-                id="moon"
-                ref={moon}
-                onClick={() => darkMoon()}
-              />
-              <img
-                src={imgMoon}
-                alt="moon"
-                width={"25px"}
-                height={"25px"}
-                id="sun"
-                ref={sun}
-                onClick={() => darkSun()}
-                style={{ marginTop: "1.5px" }}
-              />
-            </div>
-          </div>
+      <div className="fixed top-0 w-full z-[999] backdrop-blur-sm shadow-[2px_2px_2px_2px_var(--boxShadow)] bg-white dark:bg-gray-900 px-4 py-2 flex justify-between items-center">
+      
+      {/* يسار: اللوجو وكلمة تالا */}
+      <div className="flex items-center space-x-4 rtl:space-x-reverse">
+        <img
+          src={dark ? imgLogo : imgLogoDark}
+          alt="logo"
+          className="mt-[20px] ml-[15px] w-[125px]"
+        />
+
+        {/* كلمة تالا تظهر فقط في الشاشات الكبيرة */}
+        <a
+          href="#tala-section"
+          className="hidden md:inline-block text-lg font-semibold text-gray-800 dark:text-white hover:text-indigo-600"
+        >
+          تالا
+        </a>
+      </div>
+
+      {/* يمين: اللغة والدارك مود + زر المنيو للموبايل */}
+      <div className="flex items-center space-x-4 rtl:space-x-reverse">
+        {dir === "en" ? (
+          <img
+            src={imgFlagEG}
+            alt="flag"
+            width="22"
+            height="22"
+            onClick={() => i18n.changeLanguage("ar")}
+            className="cursor-pointer mt-[7px]"
+          />
+        ) : (
+          <img
+            src={imgFlagEN}
+            alt="flag"
+            width="30"
+            height="30"
+            onClick={() => i18n.changeLanguage("en")}
+            className="cursor-pointer"
+          />
+        )}
+
+        <div className="relative h-[30px] w-[30px] m-[2px_8px] cursor-pointer">
+          <img
+            src={imgSun}
+            alt="sun"
+            width="28"
+            height="28"
+            id="moon"
+            ref={moon}
+            onClick={() => darkMoon()}
+            className="invisible text-white absolute"
+          />
+          <img
+            src={imgMoon}
+            alt="moon"
+            width="25"
+            height="25"
+            id="sun"
+            ref={sun}
+            onClick={() => darkSun()}
+            className="absolute mt-[1.5px]"
+          />
         </div>
+
+        {/* زر المينيو في الشاشات الصغيرة */}
+        <div className="md:hidden">
+          <button onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? (
+              <XMarkIcon className="h-6 w-6 text-gray-700 dark:text-white" />
+            ) : (
+              <Bars3Icon className="h-6 w-6 text-gray-700 dark:text-white" />
+            )}
+          </button>
+        </div>
+      </div>
+
+      {/* قائمة الموبايل المنسدلة */}
+      {menuOpen && (
+        <div className="absolute top-full left-0 w-full bg-white dark:bg-gray-800 text-center py-4 flex flex-col gap-4 shadow-md md:hidden">
+          <a
+            href="#tala-section"
+            onClick={() => setMenuOpen(false)}
+            className="text-gray-800 dark:text-white hover:text-indigo-600"
+          >
+            تالا
+          </a>
+        </div>
+      )}
+    </div>
+
 
         <div className="SectionOne" data-aos="fade-up">
           <Row style={{ marginTop: "10%" }} align="middle">
@@ -130,14 +175,14 @@ export default function Home() {
             <Col xs={24} md={12} lg={9}>
               <div className="textSection1" style={{ marginTop: "2%" }}>
                 <h1 style={{ fontSize: "35px" }}>{t("TitleOneSectionHome")}</h1>
-                <p style={{ fontSize: "18px" }} >{t("TitleTwoSectionHome")}</p>
+                <p style={{ fontSize: "18px" }}>{t("TitleTwoSectionHome")}</p>
                 <Row gutter={20} className="SectionButtonOne">
-                  <Col >
+                  <Col>
                     <Link href="#SectionEight">
                       <button>{t("StartYourInvestment")}</button>
                     </Link>
                   </Col>
-                  <Col >
+                  <Col>
                     <button onClick={openWhatsApp}>
                       <WhatsAppOutlined style={{ margin: "0px 5px" }} />
                       {t("ContactUs")}
