@@ -134,7 +134,7 @@ export default function SectionNine() {
                     />
                 </div>
                 <div>
-                    <h1 style={{ textAlign: "center", marginTop:"22px" }}> {t("sectionNineTitle")} </h1>
+                    <h1 style={{ textAlign: "center", marginTop:"16%" }}> {t("sectionNineTitle")} </h1>
                 </div>
             </div>
 

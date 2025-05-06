@@ -10,9 +10,9 @@ export default function SectionFour() {
         <h1 style={{ textAlign: "center" }}> {t("sectionFourTitle")} </h1>
         <Row
           justify="center"
-          style={{ gap: "20px", marginTop: "40px", textAlign: "center" }}
+          style={{ gap: "20px", marginTop: "40px" }}
         >
-          <Col xs={16} md={10} lg={10} xl={9}>
+          <Col xs={20} md={18} lg={12} >
             <Row style={{ gap: "15px" }}>
               <Col xs={24}>
                 <div className="SectionFourContainer">
@@ -20,7 +20,7 @@ export default function SectionFour() {
                     style={{
                       display: "flex",
                       gap: "10px",
-                      justifyContent: "center"
+                      // justifyContent: "center"
                     }}
                   >
                     <div style={{ width: "60px", height: "60px" }}>
@@ -45,10 +45,10 @@ export default function SectionFour() {
                     style={{
                       display: "flex",
                       gap: "10px",
-                      justifyContent: "center"
+                      // justifyContent: "center"
                     }}
                   >
-                    <div style={{ width: "60px", height: "60px" }}>
+                    <div style={{ width: "50px", height: "50px" }}>
                       <DotLottieReact
                         src="https://lottie.host/e927ab39-9840-44ef-bbaf-b750433f63d3/n6BLGU3SFE.lottie"
                         loop
@@ -66,7 +66,7 @@ export default function SectionFour() {
               </Col>
             </Row>
           </Col>
-          <Col xs={16} md={10} lg={10} xl={9}>
+          <Col xs={20} md={18} lg={12} >
             <Row style={{ gap: "15px" }}>
               <Col xs={24}>
                 <div className="SectionFourContainer">
@@ -74,7 +74,7 @@ export default function SectionFour() {
                     style={{
                       display: "flex",
                       gap: "10px",
-                      justifyContent: "center"
+                      // justifyContent: "center"
                     }}
                   >
                     <div style={{ width: "60px", height: "60px" }}>
@@ -99,7 +99,7 @@ export default function SectionFour() {
                     style={{
                       display: "flex",
                       gap: "10px",
-                      justifyContent: "center"
+                      // justifyContent: "center"
                     }}
                   >
                     <div style={{ width: "60px", height: "60px" }}>

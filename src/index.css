@@ -1,26 +1,26 @@
 :root {
   --colorTitle: rgba(219, 68, 68, 1);
-  --colorBorder: rgba(0, 0, 0, 0.3);
-  --colorText: rgba(0, 0, 0, 1);
+  --colorBorder: #acacf4;
+  --colorText: #313492;
   --backgroundImage: rgba(245, 245, 245, 1);
   --backgroundPage:  #ffffff;
   --backgroundFooter: rgba(0, 0, 0, 1);
-  --boxShadow : rgb(107 107 107);
-  --backgroundAll: #f1f1f1cf;
+  --boxShadow : #acacf4;
+  --backgroundAll: #ffffff;
   --imgColor: transparent;
-  --colorTextP: rgb(10 11 26 / 70%);
+  --colorTextP: #504c89;
   --backgroundPage1: #f1f1f180;
 }
 
 .dark {
-  --boxShadow : rgb(208 206 206 / 50%);
+  --boxShadow : #acacf4;
   --colorTitle: rgba(219, 68, 68, 1);
-  --colorBorder: rgba(255, 255, 255, 0.2);
+  --colorBorder: #acacf4;
   --colorText: rgba(255, 255, 255, 0.87);
   --backgroundImage: rgba(40, 40, 40, 1);
   --backgroundPage: rgba(20, 20, 20, 0.849);
   --backgroundFooter: rgba(24, 24, 24, 1);
-  --backgroundAll: #272727;
+  --backgroundAll: #272727 ;
   --imgColor: rgba(0, 0, 0, 0.767);
   --colorTextP: rgb(215 215 215 / 70%);
   --backgroundPage1: transparent;
@@ -105,7 +105,7 @@ hr {
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 1px 1px 1px 1px var(--boxShadow);
+  box-shadow: 2px 2px 2px 2px var(--boxShadow);
   z-index: 999;
 }
 
@@ -163,11 +163,17 @@ hr {
   letter-spacing: -0.5px;
   box-shadow: -1px 2px 7px -4px var(--boxShadow);
   margin: 25px 0px;
+  border: 1px solid var(--colorBorder);
 
 }
 
 .SectionOneContainer:hover {
   transform: translate(-2px, 3px);
+  background-color: #2530a6;
+}
+
+.SectionOneContainer:hover  p{
+  color: var(--backgroundPage) !important;
 }
 
 
@@ -178,14 +184,20 @@ hr {
   transition: all 0.5s linear;
   min-height: 190px;
   font-size: 16px;
-  opacity: 0.7;
   letter-spacing: -0.5px;
-  box-shadow: -1px 2px 7px -4px var(--boxShadow)
+  box-shadow: -1px 2px 7px -4px var(--boxShadow);
+  border: 1px solid var(--colorBorder);
+  
 }
 
 .SectionFourContainer:hover {
   transform: translate(-2px, 3px);
+  background-color: #2530a6;
+
 }
+.SectionFourContainer:hover p ,.SectionFourContainer:hover div{
+  color: var(--backgroundPage) !important;
+} 
 
 .SectionFive {
   margin: 200px 0px;
@@ -214,14 +226,20 @@ hr {
   transition: all 0.5s linear;
   min-height: 80px;
   font-size: 15px;
-  opacity: 0.9;
   letter-spacing: -0.5px;
-  box-shadow: -1px 2px 7px -4px var(--boxShadow)
+  box-shadow: -1px 2px 7px -4px var(--boxShadow);
+  border: 1px solid var(--colorBorder);
 }
 
 .SectionSevenContaier1:hover {
   transform: translate(-2px, 3px);
+  background-color: #2530a6;
 }
+
+.SectionSevenContaier1:hover  div{
+  color: var(--backgroundPage) !important;
+}
+
 
 .SectionSixContaier{
   background-color: var(--backgroundAll);
@@ -230,19 +248,24 @@ hr {
   transition: all 0.5s linear;
   min-height: 80px;
   font-size: 9px;
-  opacity: 0.9;
   letter-spacing: -0.5px;
-  box-shadow: -1px 2px 7px -4px var(--boxShadow)
+  box-shadow: -1px 2px 7px -4px var(--boxShadow);
+  border: 1px solid var(--colorBorder);
 }
 .SectionSixContaier:hover {
   transform: translate(-2px, 3px);
+
 }
+
+
+
 
 .SectionSevenContaier {
   background-color: var(--backgroundAll) !important;
   border-radius: 15px;
   box-shadow: -1px 2px 7px -4px var(--boxShadow);
   padding: 20px;
+  border: 1px solid var(--colorBorder);
 
 }
 
@@ -279,6 +302,7 @@ hr {
   border: none;
   color: white;
   font-size: 15px;
+  
 
 }
 
@@ -294,6 +318,7 @@ hr {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   box-shadow: -1px 2px 7px -4px var(--boxShadow);
+  border: 1px solid var(--colorBorder);
 }
 
 .SectionEight .Text {
@@ -304,6 +329,7 @@ hr {
   letter-spacing: -0.5px;
   font-size: 15px;
   box-shadow: -1px 2px 7px -4px var(--boxShadow);
+  border: 1px solid var(--colorBorder);
 
 
 }
@@ -362,6 +388,7 @@ hr {
   margin: 20px;
   border-radius: 10px;
   font-size: 14px;
+  border: 1px solid var(--colorBorder);
 }
 
 .Footer {
@@ -458,7 +485,7 @@ hr {
   }
 
   .SectionFourContainer {
-    min-height: 245px;
+    min-height: 100px;
 
   }
 
@@ -504,14 +531,14 @@ hr {
 
 @media (min-width: 1200px) and (max-width:1300px){
   .SectionFourContainer {
-    min-height: 190px;
+    min-height: 100px;
 
   }
 }
 
 @media (min-width: 1301px) {
   .SectionFourContainer {
-    min-height: 195px;
+    min-height: 100px;
 
   }
   .SectionFourContainer p {
