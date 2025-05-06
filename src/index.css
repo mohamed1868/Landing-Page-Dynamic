@@ -3,15 +3,17 @@
   --colorBorder: rgba(0, 0, 0, 0.3);
   --colorText: rgba(0, 0, 0, 1);
   --backgroundImage: rgba(245, 245, 245, 1);
-  --backgroundPage: #f1f1f1;
+  --backgroundPage:  #ffffff;
   --backgroundFooter: rgba(0, 0, 0, 1);
-  --backgroundAll: #ffffff;
+  --boxShadow : rgb(107 107 107);
+  --backgroundAll: #f1f1f1cf;
   --imgColor: transparent;
   --colorTextP: rgb(10 11 26 / 70%);
-  --backgroundPage1: #f1f1f1;
+  --backgroundPage1: #f1f1f180;
 }
 
 .dark {
+  --boxShadow : rgb(208 206 206 / 50%);
   --colorTitle: rgba(219, 68, 68, 1);
   --colorBorder: rgba(255, 255, 255, 0.2);
   --colorText: rgba(255, 255, 255, 0.87);
@@ -103,7 +105,7 @@ hr {
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 1px 1px 1px 1px var(--colorBorder);
+  box-shadow: 1px 1px 1px 1px var(--boxShadow);
   z-index: 999;
 }
 
@@ -159,7 +161,7 @@ hr {
   min-height: 80px;
   font-size: 15px;
   letter-spacing: -0.5px;
-  box-shadow: -1px 2px 7px -4px var(--colorText);
+  box-shadow: -1px 2px 7px -4px var(--boxShadow);
   margin: 25px 0px;
 
 }
@@ -178,7 +180,7 @@ hr {
   font-size: 16px;
   opacity: 0.7;
   letter-spacing: -0.5px;
-  box-shadow: -1px 2px 7px -4px var(--colorText)
+  box-shadow: -1px 2px 7px -4px var(--boxShadow)
 }
 
 .SectionFourContainer:hover {
@@ -214,7 +216,7 @@ hr {
   font-size: 15px;
   opacity: 0.9;
   letter-spacing: -0.5px;
-  box-shadow: -1px 2px 7px -4px var(--colorText)
+  box-shadow: -1px 2px 7px -4px var(--boxShadow)
 }
 
 .SectionSevenContaier1:hover {
@@ -230,7 +232,7 @@ hr {
   font-size: 9px;
   opacity: 0.9;
   letter-spacing: -0.5px;
-  box-shadow: -1px 2px 7px -4px var(--colorText)
+  box-shadow: -1px 2px 7px -4px var(--boxShadow)
 }
 .SectionSixContaier:hover {
   transform: translate(-2px, 3px);
@@ -239,7 +241,7 @@ hr {
 .SectionSevenContaier {
   background-color: var(--backgroundAll) !important;
   border-radius: 15px;
-  box-shadow: -1px 2px 7px -4px var(--colorText);
+  box-shadow: -1px 2px 7px -4px var(--boxShadow);
   padding: 20px;
 
 }
@@ -291,7 +293,7 @@ hr {
   padding: 20px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  box-shadow: -1px 2px 7px -4px var(--colorText);
+  box-shadow: -1px 2px 7px -4px var(--boxShadow);
 }
 
 .SectionEight .Text {
@@ -301,7 +303,7 @@ hr {
   padding: 10px;
   letter-spacing: -0.5px;
   font-size: 15px;
-  box-shadow: -1px 2px 7px -4px var(--colorText);
+  box-shadow: -1px 2px 7px -4px var(--boxShadow);
 
 
 }
@@ -355,7 +357,7 @@ hr {
 }
 
 .SectionNineContainer .ant-collapse-item {
-  box-shadow: -1px 2px 7px -4px var(--colorText);
+  box-shadow: -1px 2px 7px -4px var(--boxShadow);
   background-color: var(--backgroundAll);
   margin: 20px;
   border-radius: 10px;
@@ -456,7 +458,7 @@ hr {
   }
 
   .SectionFourContainer {
-    min-height: 225px;
+    min-height: 245px;
 
   }
 
