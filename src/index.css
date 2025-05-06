@@ -456,7 +456,7 @@ hr {
   }
 
   .SectionFourContainer {
-    min-height: 220px;
+    min-height: 225px;
 
   }
 
@@ -500,7 +500,22 @@ hr {
   }
 }
 
+@media (min-width: 1200px) and (max-width:1300px){
+  .SectionFourContainer {
+    min-height: 190px;
+
+  }
+}
+
 @media (min-width: 1301px) {
+  .SectionFourContainer {
+    min-height: 170px;
+
+  }
+  .SectionFourContainer p {
+    margin-top: -2px;
+
+  }
 
   .anminationOne {
     margin: 0px -76px;
