@@ -76,7 +76,7 @@ export default function Home() {
         <img
           src={dark ? imgLogo : imgLogoDark}
           alt="logo"
-          className="mt-[10px] ml-[15px] w-[125px]"
+          className="mt-[10px] ml-[15px]"
         />
         <div className="flex items-center space-x-4 rtl:space-x-reverse titleHeader" >
 
