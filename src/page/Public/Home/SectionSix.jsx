@@ -25,7 +25,7 @@ export default function SectionSix() {
                                         autoplay
                                    />
                               </div>
-                              <h1>Right Time Express</h1>
+                              <h1 style={{fontSize:"17px"}}>Right Time Express</h1>
                               <Link href="#SectionEight">
                                    <button className='buttonSectionSix'>  {t("sectionSevenPageButton")} </button>
                               </Link>
@@ -39,7 +39,7 @@ export default function SectionSix() {
                                         autoplay
                                    />
                               </div>
-                              <h1>  Nova Systems </h1>
+                              <h1 style={{fontSize:"17px"}}>  Nova Systems </h1>
                               <Link href="#SectionEight">
                                    <button className='buttonSectionSix'>  {t("sectionSevenPageButton")} </button>
                               </Link>
@@ -52,7 +52,7 @@ export default function SectionSix() {
                                         autoplay
                                    />
                               </div>
-                              <h1>DIT </h1>
+                              <h1 style={{fontSize:"17px"}}>DIT </h1>
                               <Link href="#SectionEight">
                                    <button className='buttonSectionSix'>  {t("sectionSevenPageButton")} </button>
                               </Link>
