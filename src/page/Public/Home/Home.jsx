@@ -66,26 +66,41 @@ export default function Home() {
 
   return (
     <>
-      <div className="HomeSection">
+      <div className="HomeSection" id="HomeSection">
 
 
-      <div className="fixed top-0 w-full z-[999] backdrop-blur-sm shadow-[2px_2px_2px_2px_var(--boxShadow)] bg-white dark:bg-gray-900 px-4 py-2 flex justify-between items-center">
+      <div style={{opacity:"0.8"}} className="fixed top-0 w-full z-[999] backdrop-blur-sm shadow-[2px_2px_2px_2px_var(--shadowHeader)]  dark:bg-gray-900 px-4 py-2 flex justify-between items-center Header">
       
       {/* يسار: اللوجو وكلمة تالا */}
-      <div className="flex items-center space-x-4 rtl:space-x-reverse">
+      <div className="flex items-center space-x-4 rtl:space-x-reverse " style={{gap:"60px"}}>
         <img
           src={dark ? imgLogo : imgLogoDark}
           alt="logo"
-          className="mt-[20px] ml-[15px] w-[125px]"
+          className="mt-[10px] ml-[15px] w-[125px]"
         />
+        <div className="flex items-center space-x-4 rtl:space-x-reverse titleHeader" >
 
         {/* كلمة تالا تظهر فقط في الشاشات الكبيرة */}
-        <a
-          href="#tala-section"
-          className="hidden md:inline-block text-lg font-semibold text-gray-800 dark:text-white hover:text-indigo-600"
+        <Link
+       
+          href="#HomeSection"
+          className="hidden md:inline-block text-lg font-semibold text-gray-800 dark:text-white hover:text-indigo-600 mt-[10px]  "
         >
-          تالا
-        </a>
+       {t("TitleHeaderOne")}
+        </Link>
+        <Link
+          href="#SectionSix"
+          className="hidden md:inline-block text-lg font-semibold text-gray-800 dark:text-white hover:text-indigo-600 mt-[10px] "
+        >
+       {t("TitleHeaderTwo")}
+        </Link>
+        <Link
+          href="#SectionEight"
+          className="hidden md:inline-block text-lg font-semibold text-gray-800 dark:text-white hover:text-indigo-600 mt-[10px] "
+        >
+       {t("TitleHeaderThree")}
+        </Link>
+        </div>
       </div>
 
       {/* يمين: اللغة والدارك مود + زر المنيو للموبايل */}
@@ -97,7 +112,7 @@ export default function Home() {
             width="22"
             height="22"
             onClick={() => i18n.changeLanguage("ar")}
-            className="cursor-pointer mt-[7px]"
+            className="cursor-pointer"
           />
         ) : (
           <img
@@ -119,7 +134,7 @@ export default function Home() {
             id="moon"
             ref={moon}
             onClick={() => darkMoon()}
-            className="invisible text-white absolute"
+            className="invisible text-white absolute mt-[3px]"
           />
           <img
             src={imgMoon}
@@ -139,7 +154,7 @@ export default function Home() {
             {menuOpen ? (
               <XMarkIcon className="h-6 w-6 text-gray-700 dark:text-white" />
             ) : (
-              <Bars3Icon className="h-6 w-6 text-gray-700 dark:text-white" />
+              <Bars3Icon className="h-6 w-6 text-gray-700 dark:text-white  mt-[7px]" />
             )}
           </button>
         </div>
@@ -148,13 +163,27 @@ export default function Home() {
       {/* قائمة الموبايل المنسدلة */}
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-white dark:bg-gray-800 text-center py-4 flex flex-col gap-4 shadow-md md:hidden">
-          <a
+          <Link
             href="#tala-section"
             onClick={() => setMenuOpen(false)}
             className="text-gray-800 dark:text-white hover:text-indigo-600"
           >
-            تالا
-          </a>
+             {t("TitleHeaderOne")}
+          </Link>
+          <Link
+            href="#tala-section"
+            onClick={() => setMenuOpen(false)}
+            className="text-gray-800 dark:text-white hover:text-indigo-600"
+          >
+             {t("TitleHeaderTwo")}
+          </Link>
+          <Link
+            href="#tala-section"
+            onClick={() => setMenuOpen(false)}
+            className="text-gray-800 dark:text-white hover:text-indigo-600"
+          >
+             {t("TitleHeaderThree")}
+          </Link>
         </div>
       )}
     </div>

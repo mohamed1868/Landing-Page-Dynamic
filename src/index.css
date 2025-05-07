@@ -13,6 +13,9 @@
   --imgColor: transparent;
   --colorTextP: #504c89;
   --backgroundPage1: #f1f1f180;
+  --shadowHeader: #b1b1c3;
+  --colorHeader: #313492
+
 }
 
 .dark {
@@ -28,6 +31,8 @@
   --colorTextP: rgb(215 215 215 / 70%);
   --backgroundPage1: transparent;
   --colorTextHover: #ffffff;
+  --shadowHeader:#1c1c21;
+  --colorHeader: #ffffff
 }
 
 * {
@@ -70,6 +75,14 @@ p {
 hr {
   border-color: var(--colorText);
 }
+.titleHeader{
+  gap: 70px; 
+}
+.titleHeader a{
+  font-size: 16px;
+  font-weight: bold !important;
+  color: var(--colorHeader);
+}
 
 .HomeSection {
   background-image: linear-gradient(var(--imgColor), var(--imgColor)), url(./Image/5594016.jpg);
@@ -85,7 +98,7 @@ hr {
   width: 125px;
 }
 
-#moon {
+ #moon {
   visibility: hidden;
   color: white;
 }
@@ -101,17 +114,9 @@ hr {
   position: absolute;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  backdrop-filter: blur(5px);
-  padding-bottom: 10px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 2px 2px 2px 2px var(--boxShadow);
-  z-index: 999;
-}
+.Header {
+background-color: var(--backgroundAll);
+} 
 
 .textSection1 button {
   text-align: center !important;
@@ -526,6 +531,9 @@ hr {
     margin: 40px 0px;
 
 
+  }
+  .titleHeader{
+    gap: 30px; 
   }
 
   .textSection1 button:hover {

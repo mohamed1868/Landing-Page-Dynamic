@@ -12,7 +12,7 @@ export default function SectionSix() {
 
      return (<>
 
-          <div className="SectionSix" data-aos="fade-up">
+          <div className="SectionSix" id='SectionSix' data-aos="fade-up">
                <h1 style={{ textAlign: "center" }}> {t("sectionSixTitle")}</h1>
                <h4  >{t("sectionSixTitle2")} </h4>
                <div>
