@@ -1,6 +1,6 @@
 import Link from "antd/es/typography/Link";
-import logoImg from "../../../Image/logo.png"
-import logoImgDark from "../../../Image/Untitled-2.png-white.png"
+import logoImg from "../../../Image/logo.webp"
+import logoImgDark from "../../../Image/Untitled-2.png-white.webp"
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
 import { contextDarkMode } from "../../Context/DarkMode";
