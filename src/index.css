@@ -4,7 +4,7 @@
   --colorTitle: rgba(219, 68, 68, 1);
   --colorBorder: #acacf4;
   --colorText: #313492;
-  --backgroundImage: rgba(245, 245, 245, 1);
+  --backgroundImage: rgba(245, 245, 245, 0);
   --backgroundPage: #ffffff;
   --backgroundFooter: rgba(0, 0, 0, 1);
   --boxShadow: #acacf4;
@@ -15,6 +15,7 @@
   --backgroundPage1: #f1f1f180;
   --shadowHeader: #0000d3;
   --colorHeader: #ffffff;
+  --backgroundHeader: #131d96;
 }
 
 .dark {
@@ -22,7 +23,7 @@
   --colorTitle: rgba(219, 68, 68, 1);
   --colorBorder: #acacf4;
   --colorText: rgba(255, 255, 255, 0.87);
-  --backgroundImage: rgba(40, 40, 40, 1);
+  --backgroundImage: rgba(40, 40, 40, 0.596);
   --backgroundPage: rgba(20, 20, 20, 0.849);
   --backgroundFooter: rgba(24, 24, 24, 1);
   --backgroundAll: #272727;
@@ -30,8 +31,9 @@
   --colorTextP: rgb(215 215 215 / 70%);
   --backgroundPage1: transparent;
   --colorTextHover: #ffffff;
-  --shadowHeader: #0000d3;
+  --shadowHeader: #05072b;
   --colorHeader: #ffffff;
+  --backgroundHeader: #0a0f4e;
 }
 
 * {
@@ -81,8 +83,8 @@ hr {
 
 .HomeSection {
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
+     var(--backgroundImage),
+    var(--backgroundImage)
     ),
     url(./Image/Untitled-1.png-2.png);
   background-size: cover;
@@ -94,8 +96,8 @@ hr {
 
 .HomeSectionEN {
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
+    var(--backgroundImage),
+    var(--backgroundImage)
     ),
     url(./Image/Untitled-1.png);
   background-size: cover;
@@ -127,7 +129,7 @@ hr {
 }
 
 .Header {
-  background-color: #131d96;
+  background-color: var(--backgroundHeader);
   height: 80px;
 }
 
