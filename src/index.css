@@ -5,34 +5,33 @@
   --colorBorder: #acacf4;
   --colorText: #313492;
   --backgroundImage: rgba(245, 245, 245, 1);
-  --backgroundPage:  #ffffff;
+  --backgroundPage: #ffffff;
   --backgroundFooter: rgba(0, 0, 0, 1);
-  --boxShadow : #acacf4;
+  --boxShadow: #acacf4;
   --backgroundAll: #ffffff;
   --colorTextHover: #ffffff;
   --imgColor: transparent;
   --colorTextP: #504c89;
   --backgroundPage1: #f1f1f180;
-  --shadowHeader: #b1b1c3;
-  --colorHeader: #313492
-
+  --shadowHeader: #0000d3;
+  --colorHeader: #ffffff;
 }
 
 .dark {
-  --boxShadow : #acacf4;
+  --boxShadow: #acacf4;
   --colorTitle: rgba(219, 68, 68, 1);
   --colorBorder: #acacf4;
   --colorText: rgba(255, 255, 255, 0.87);
   --backgroundImage: rgba(40, 40, 40, 1);
   --backgroundPage: rgba(20, 20, 20, 0.849);
   --backgroundFooter: rgba(24, 24, 24, 1);
-  --backgroundAll: #272727 ;
+  --backgroundAll: #272727;
   --imgColor: rgba(0, 0, 0, 0.767);
   --colorTextP: rgb(215 215 215 / 70%);
   --backgroundPage1: transparent;
   --colorTextHover: #ffffff;
-  --shadowHeader:#1c1c21;
-  --colorHeader: #ffffff
+  --shadowHeader: #0000d3;
+  --colorHeader: #ffffff;
 }
 
 * {
@@ -47,7 +46,6 @@ body {
   height: 100%;
   font-family: Cairo, sans-serif;
   font-size: 18px;
-
 }
 
 h1,
@@ -59,14 +57,11 @@ h6,
 div {
   color: var(--colorText);
   font-family: Cairo, sans-serif;
-
 }
 
 h4 {
   opacity: 0.7;
-
 }
-
 
 p {
   color: var(--colorTextP);
@@ -75,17 +70,34 @@ p {
 hr {
   border-color: var(--colorText);
 }
-.titleHeader{
-  gap: 70px; 
+.titleHeader {
+  gap: 70px;
 }
-.titleHeader a{
+.titleHeader a {
   font-size: 16px;
   font-weight: bold !important;
-  color: var(--colorHeader);
+  color: #ffffff;
 }
 
 .HomeSection {
-  background-image: linear-gradient(var(--imgColor), var(--imgColor)), url(./Image/5594016.jpg);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    url(./Image/Untitled-1.png-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.HomeSectionEN {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    url(./Image/Untitled-1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,7 +110,7 @@ hr {
   width: 125px;
 }
 
- #moon {
+#moon {
   visibility: hidden;
   color: white;
 }
@@ -115,8 +127,9 @@ hr {
 }
 
 .Header {
-background-color: var(--backgroundAll);
-} 
+  background-color: #131d96;
+  height: 80px;
+}
 
 .textSection1 button {
   text-align: center !important;
@@ -131,7 +144,6 @@ background-color: var(--backgroundAll);
   cursor: pointer;
   transition: all 0.5s ease;
   margin: 25px 0px;
-
 }
 
 .textSection1 button:hover {
@@ -149,14 +161,12 @@ background-color: var(--backgroundAll);
 
   display: flex;
   justify-content: center;
-
 }
 
 .SectionTwo h1 {
   letter-spacing: -1px;
   text-align: center;
 }
-
 
 .SectionFour {
   margin: 120px 0px;
@@ -173,7 +183,6 @@ background-color: var(--backgroundAll);
   box-shadow: -1px 2px 7px -4px var(--boxShadow);
   margin: 25px 0px;
   border: 1px solid var(--colorBorder);
-
 }
 
 .SectionOneContainer:hover {
@@ -181,10 +190,9 @@ background-color: var(--backgroundAll);
   background-color: #2530a6;
 }
 
-.SectionOneContainer:hover  p{
+.SectionOneContainer:hover p {
   color: var(--colorTextHover) !important;
 }
-
 
 .SectionFourContainer {
   background-color: var(--backgroundAll);
@@ -196,25 +204,30 @@ background-color: var(--backgroundAll);
   letter-spacing: -0.5px;
   box-shadow: -1px 2px 7px -4px var(--boxShadow);
   border: 1px solid var(--colorBorder);
-  
 }
 
 .SectionFourContainer:hover {
   transform: translate(-2px, 3px);
   background-color: #2530a6;
-
 }
-.SectionFourContainer:hover p ,.SectionFourContainer:hover div{
+.SectionFourContainer:hover p,
+.SectionFourContainer:hover div {
   color: var(--colorTextHover) !important;
-} 
+}
 
 .SectionFive {
   margin: 200px 0px;
 }
 
-
 .SectionOne {
   margin-top: 150px;
+}
+.textSection1 h1,
+.textSection1 p {
+  color: #ffffff;
+}
+.textSection1 p{
+  opacity: 0.8;
 }
 
 .SectionSix h4 {
@@ -222,7 +235,6 @@ background-color: var(--backgroundAll);
   margin: 0px auto;
   text-align: center;
 }
-
 
 .SectionSeven {
   margin: 120px 0px;
@@ -245,12 +257,11 @@ background-color: var(--backgroundAll);
   background-color: #2530a6;
 }
 
-.SectionSevenContaier1:hover  div{
+.SectionSevenContaier1:hover div {
   color: var(--colorTextHover) !important;
 }
 
-
-.SectionSixContaier{
+.SectionSixContaier {
   background-color: var(--backgroundAll);
   padding: 15px;
   border-radius: 20px;
@@ -263,11 +274,7 @@ background-color: var(--backgroundAll);
 }
 .SectionSixContaier:hover {
   transform: translate(-2px, 3px);
-
 }
-
-
-
 
 .SectionSevenContaier {
   background-color: var(--backgroundAll) !important;
@@ -275,7 +282,6 @@ background-color: var(--backgroundAll);
   box-shadow: -1px 2px 7px -4px var(--boxShadow);
   padding: 20px;
   border: 1px solid var(--colorBorder);
-
 }
 
 .SectionSevenContaier button {
@@ -292,13 +298,11 @@ background-color: var(--backgroundAll);
   font-size: 15px;
 }
 
-
-
 .SectionSevenContaier button:hover {
   background-image: linear-gradient(to right, #2575fc, #6a34a3);
 }
 
-.buttonSectionSix{
+.buttonSectionSix {
   width: 100%;
   height: 35px;
   background-image: linear-gradient(to right, #6a34a3, #2575fc);
@@ -311,8 +315,6 @@ background-color: var(--backgroundAll);
   border: none;
   color: white;
   font-size: 15px;
-  
-
 }
 
 .buttonSectionSix:hover {
@@ -339,8 +341,6 @@ background-color: var(--backgroundAll);
   font-size: 15px;
   box-shadow: -1px 2px 7px -4px var(--boxShadow);
   border: 1px solid var(--colorBorder);
-
-
 }
 
 .SectionEight .Text div {
@@ -350,8 +350,6 @@ background-color: var(--backgroundAll);
 
 .SectionEightContainer form {
   margin: 0px auto;
-
-
 }
 
 .SectionEightContainer form input {
@@ -383,7 +381,6 @@ background-color: var(--backgroundAll);
   margin: 20px auto 0px;
   border-radius: 10px;
   direction: rtl !important;
-
 }
 
 .SectionNine .SectionNineContainer .ant-collapse {
@@ -408,11 +405,8 @@ background-color: var(--backgroundAll);
   padding: 20px 0px;
 }
 
-
 @media (max-width: 767px) {
-
   .iconSection {
-
     display: none;
   }
 
@@ -428,7 +422,6 @@ background-color: var(--backgroundAll);
 
   .textSection1 h1 {
     font-size: 25px !important;
-
   }
 
   .SectionButtonOne {
@@ -437,7 +430,6 @@ background-color: var(--backgroundAll);
 
   .SectionTwo {
     max-width: 80%;
-
   }
 
   .swiper {
@@ -450,7 +442,14 @@ background-color: var(--backgroundAll);
   }
 
   .SectionOne {
-    margin-top: 120px;
+    margin-top: 170px;
+  }
+
+  .SectionOne p {
+    margin-top: 40px;
+  }
+  .SectionOne button {
+    margin-top: 80px;
   }
 
   .SectionEightContainer {
@@ -462,16 +461,13 @@ background-color: var(--backgroundAll);
   }
 }
 
-
-@media (min-width: 768px) and (max-width:1300px) {
-  .anminationOne{
+@media (min-width: 768px) and (max-width: 1300px) {
+  .anminationOne {
     margin: 0px -165px;
     width: 157%;
   }
   .SectionOneContainer {
     width: 700px;
-
-
   }
 
   .SectionNine .SectionNineContainer {
@@ -495,7 +491,6 @@ background-color: var(--backgroundAll);
 
   .SectionFourContainer {
     min-height: 100px;
-
   }
 
   .mySwiper2 {
@@ -503,7 +498,10 @@ background-color: var(--backgroundAll);
   }
 
   .SectionOne {
-    margin-top: 165px;
+    margin-top: 220px;
+  }
+  .SectionOne p {
+    margin-top: 40px;
   }
 
   .textSection1 h1 {
@@ -529,11 +527,9 @@ background-color: var(--backgroundAll);
     cursor: pointer;
     transition: all 0.5s ease;
     margin: 40px 0px;
-
-
   }
-  .titleHeader{
-    gap: 30px; 
+  .titleHeader {
+    gap: 30px;
   }
 
   .textSection1 button:hover {
@@ -541,21 +537,18 @@ background-color: var(--backgroundAll);
   }
 }
 
-@media (min-width: 1200px) and (max-width:1300px){
+@media (min-width: 1200px) and (max-width: 1300px) {
   .SectionFourContainer {
     min-height: 100px;
-
   }
 }
 
 @media (min-width: 1301px) {
   .SectionFourContainer {
     min-height: 100px;
-
   }
   .SectionFourContainer p {
     margin-top: -2px;
-
   }
 
   .anminationOne {
@@ -563,7 +556,11 @@ background-color: var(--backgroundAll);
     width: 124%;
   }
   .SectionOne {
-    margin-top: 150px;
+    margin-top: 200px;
+  }
+
+  .SectionOne p {
+    margin-top: 40px;
   }
 
   .textSection1 h1 {
@@ -589,11 +586,20 @@ background-color: var(--backgroundAll);
     cursor: pointer;
     transition: all 0.5s ease;
     margin: 60px 0px;
-
-
   }
 
   .textSection1 button:hover {
     background-image: linear-gradient(to right, #2575fc, #6a34a3);
   }
+}
+
+.no-wrap-row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+
+
+}
+
+.no-wrap-row .ant-col {
+  flex: 0 0 auto;
 }

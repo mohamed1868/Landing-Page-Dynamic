@@ -16,24 +16,24 @@ export default function Footer() {
                     <img src={logoImg} alt="Logo" width={"100px"} height={"40px"} /> :
                     <img src={logoImgDark} alt="Logo" width={"100px"} height={"40px"} />
                 }
-                <p>  {t("FooterCol3Text1")} </p>
+                <p style={{ marginTop:"10px"}}>  {t("FooterCol3Text1")} </p>
             </div>
 
-            <div>
+            <div style={{textAlign:"center"}}>
                 <h1>{t("FooterCol2Text1")} </h1>
-                <Link href="#SectionSeven" style={{ fontSize: "12px" }}>
-                    <p>{t("FooterCol2Text2")} </p>
+                <Link href="#SectionFour" style={{ fontSize: "12px" }}>
+                    <p style={{ marginTop:"10px"}}>{t("FooterCol2Text2")} </p>
                 </Link>
-                <Link href="#SectionEight" style={{ fontSize: "12px" }}>
+                <Link href="#SectionSix" style={{ fontSize: "12px" }}>
                     <p>{t("FooterCol2Text3")} </p>
                 </Link>
-                <Link href="#SectionNine" style={{ fontSize: "12px" }}>
+                <Link href="#SectionSeven" style={{ fontSize: "12px" }}>
                     <p>{t("FooterCol2Text4")} </p>
                 </Link>
             </div>
-            <div>
+            <div style={{textAlign:"center"}}>
                 <h1> {t("FooterCol1Text1")}</h1>
-                <p>{t("FooterCol1Text2")}</p>
+                <p style={{ marginTop:"10px"}}>{t("FooterCol1Text2")}</p>
                 <p> {t("FooterCol1Text3")}</p>
             </div>
         </div>

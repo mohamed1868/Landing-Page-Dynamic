@@ -6,7 +6,7 @@ export default function SectionFour() {
 
   return (
     <>
-      <div className="SectionFour" data-aos="fade-up">
+      <div className="SectionFour" id="SectionFour" data-aos="fade-up">
         <h1 style={{ textAlign: "center" }}> {t("sectionFourTitle")} </h1>
         <Row
           justify="center"
