@@ -13,7 +13,7 @@
   --imgColor: transparent;
   --colorTextP: #504c89;
   --backgroundPage1: #f1f1f180;
-  --shadowHeader: #0000d3;
+  --shadowHeader: #2525b1;
   --colorHeader: #ffffff;
   --backgroundHeader: #131d96;
 }
@@ -86,12 +86,13 @@ hr {
      var(--backgroundImage),
     var(--backgroundImage)
     ),
-    url(./Image/Untitled-1.png-2.png);
+    url(./Image/Untitled-1.png-2.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
   overflow: auto;
+  box-shadow: 1px 2px 5px 1px var(--shadowHeader);
 }
 
 .HomeSectionEN {
@@ -99,7 +100,7 @@ hr {
     var(--backgroundImage),
     var(--backgroundImage)
     ),
-    url(./Image/Untitled-1.png);
+    url(./Image/Untitled-1.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -476,6 +477,10 @@ hr {
 }
 
 @media (min-width: 768px) and (max-width: 1300px) {
+  .iconSectionNine{
+    width: 10% !important;
+
+  }
   .anminationOne {
     margin: 0px -165px;
     width: 157%;
