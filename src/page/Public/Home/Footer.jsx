@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
 
         <div className="Footer" style={{ margin: "0px auto", fontSize: "12px" }}>
-            <p style={{ fontSize: "12px" }}> {t("FooterFinal")}</p>
+            <p style={{ fontSize: "12px",textAlign:"center" }}> {t("FooterFinal")}</p>
         </div>
     </>)
 }
