@@ -57,5 +57,33 @@
   "sectionNineTitle": " Frequently Asked Questions",
   "TitleHeaderOne": "Home page",
   "TitleHeaderTwo": "Our projects",
-  "TitleHeaderThree": "Contact us"
+  "TitleHeaderThree": "Contact us",
+
+  "faq6Label": "? What are the steps to contract",
+  "faq6Step1": ". Signing contracts: The investment agreement is signed after carefully reviewing its terms",
+  "faq6Step2": ". Paying for shares: According to the terms agreed upon, and shares are recorded via certified securities exchange",
+  "faq6Step3": ". Receiving official documents: You receive the documents legally proving your share ownership",
+
+  "faq7Label": "? How is my share registered",
+  "faq7Step1": ": We ensure your share is legally and transparently registered through",
+  "faq7Step2": ". Certified contracts and official documents",
+  "faq7Step3": ". Registration via licensed securities exchange approved by the Financial Regulatory Authority",
+  "faq7Step4": ". Periodic update of the shareholder register to ensure full rights",
+
+  "faq8Label": "? What makes my investment in Invest in Egypt safe and secure",
+  "faq8Step1": ". Shares are centrally held in a private joint-stock company under the supervision of financial authorities stock exchange records and a securities account managed by a custodian bank",
+  "faq8Step2": ". Transparency commitment: We adopt clear financial and legal policies and certified contracts to ensure your rights",
+  "faq8Step3": ". Proven track record: Extensive experience and successful results in technology and unified communications",
+  "faq8Step4": ". Specialized team: A group of investment, technology, economics, and legal experts",
+
+  "faq9Label": "? What is the technical expertise of the Invest in Egypt team",
+  "faq9Step1": ". Our team has deep experience in developing tech and unified communications solutions, enhancing your investment success",
+  "faq9Step2": ". Strategic partnerships: With major global companies",
+  "faq9Step3": ". Experienced professionals: In project management and market analysis to ensure integrated investment services",
+
+  "faq10Label": "? What are the vision and goals of Invest in Egypt",
+  "faq10Step1": ": We aspire to become a global leader in technology and unified communications .To achieve that, we focus on",
+  "faq10Step2": ". Providing innovative and sustainable solutions -",
+  "faq10Step3": ". Creating exceptional investment opportunities that multiply your share value -",
+  "faq10Step4": ". Global expansion: To meet the needs of dynamic markets -"
 }

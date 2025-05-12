@@ -461,6 +461,18 @@ hr {
   .SectionEight .Text {
     width: 80%;
   }
+
+}
+    .Footer  img{
+   margin: 0px auto;
+  }
+@media (max-width: 470px) {
+  .Footer {
+   flex-direction: column !important;
+   gap: 20px;
+  }
+
+
 }
 
 @media (min-width: 768px) and (max-width: 1300px) {

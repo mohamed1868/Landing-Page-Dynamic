@@ -117,7 +117,7 @@ export default function Home() {
           </div>
 
           {/* يمين: اللغة والدارك مود + زر المنيو للموبايل */}
-          <div className="flex items-center space-x-4 rtl:space-x-reverse">
+          <div className="flex items-center  rtl:space-x-reverse">
             {dir === "en" ? (
               <img
                 src={imgFlagEG}
@@ -125,7 +125,7 @@ export default function Home() {
                 width="22"
                 height="22"
                 onClick={ar}
-                className="cursor-pointer"
+                className="cursor-pointer mt-[3px]"
               />
             ) : (
               <img
@@ -134,7 +134,7 @@ export default function Home() {
                 width="30"
                 height="30"
                 onClick={En}
-                className="cursor-pointer"
+                className="cursor-pointer mt-[3px]"
               />
             )}
 
@@ -152,8 +152,8 @@ export default function Home() {
               <img
                 src={imgMoon}
                 alt="moon"
-                width="25"
-                height="25"
+                width="28"
+                height="28"
                 id="sun"
                 ref={sun}
                 onClick={() => darkSun()}
