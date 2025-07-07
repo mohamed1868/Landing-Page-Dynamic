@@ -75,7 +75,6 @@ export default function SectionNine() {
     const { t } = useTranslation()
 
     const onChange = key => {
-        console.log(key);
     };
 
     const items = [

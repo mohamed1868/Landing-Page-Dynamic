@@ -11,35 +11,37 @@ export default function Footer() {
 
     return (<>
         <div className="Footer">
-            <div style={{ marginTop: "30px", textAlign: "center" }}>
+            <div style={{ marginTop: "30px", textAlign: "center" ,fontSize: "15px"}}>
                 {dark ?
                     <img src={logoImg} alt="Logo" width={"100px"} height={"40px"} /> :
                     <img src={logoImgDark} alt="Logo" width={"100px"} height={"40px"} />
                 }
                 <p style={{ marginTop:"10px"}}>  {t("FooterCol3Text1")} </p>
+                <p>info@invest-egypt.com</p>
+                <p >01283188882</p>
             </div>
 
             <div style={{textAlign:"center"}}>
                 <h1>{t("FooterCol2Text1")} </h1>
-                <Link href="#SectionFour" style={{ fontSize: "12px" }}>
+                <Link href="#SectionFour" style={{ fontSize: "15px" }}>
                     <p style={{ marginTop:"10px"}}>{t("FooterCol2Text2")} </p>
                 </Link>
-                <Link href="#SectionSix" style={{ fontSize: "12px" }}>
+                <Link href="#SectionSix" style={{ fontSize: "15px" }}>
                     <p>{t("FooterCol2Text3")} </p>
                 </Link>
-                <Link href="#SectionSeven" style={{ fontSize: "12px" }}>
+                <Link href="#SectionSeven" style={{ fontSize: "15px" }}>
                     <p>{t("FooterCol2Text4")} </p>
                 </Link>
             </div>
-            <div style={{textAlign:"center"}}>
+            <div style={{textAlign:"center",fontSize: "15px"}}>
                 <h1> {t("FooterCol1Text1")}</h1>
                 <p style={{ marginTop:"10px"}}>{t("FooterCol1Text2")}</p>
                 <p> {t("FooterCol1Text3")}</p>
             </div>
         </div>
 
-        <div className="Footer" style={{ margin: "0px auto", fontSize: "12px" }}>
-            <p style={{ fontSize: "12px",textAlign:"center" }}> {t("FooterFinal")}</p>
+        <div className="Footer" style={{ margin: "0px auto", fontSize: "15px" }}>
+            <p style={{ fontSize: "15px",textAlign:"center" }}> {t("FooterFinal")}</p>
         </div>
     </>)
 }
