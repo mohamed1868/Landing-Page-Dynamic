@@ -4,7 +4,7 @@ import logoImgDark from "../../../Image/Untitled-2.png-white.webp";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
 import { contextDarkMode } from "../../Context/DarkMode";
-import { PhoneOutlined } from "@ant-design/icons";
+import { PhoneOutlined, MailOutlined } from "@ant-design/icons";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -19,11 +19,8 @@ export default function Footer() {
           <img src={logoImgDark} alt="Logo" width={"130px"} height={"60px"} />
 
           <p style={{ marginTop: "10px" }}> {t("FooterCol3Text1")} </p>
-          <p style={{ marginTop: "10px" }}>info@invest-egypt.com</p>
-          <p style={{ marginTop: "10px" }}>
-            <PhoneOutlined style={{ padding: "0px 5px", fontSize: "22px" }} />{" "}
-            01283188882
-          </p>
+          <p style={{ marginTop: "5px" }}>{t("FooterCol1Text2")}</p>
+          <p style={{ marginTop: "5px" }}> {t("FooterCol1Text3")}</p>
         </div>
 
         <div style={{ textAlign: "center" }}>
@@ -42,17 +39,23 @@ export default function Footer() {
         </div>
         <div style={{ textAlign: "center", fontSize: "18px" }}>
           <h1 style={{ fontSize: "20px", fontWeight: "bold" }}>
-            {" "}
+            
             {t("FooterCol1Text1")}
           </h1>
-          <p style={{ marginTop: "15px" }}>{t("FooterCol1Text2")}</p>
-          <p style={{ marginTop: "10px" }}> {t("FooterCol1Text3")}</p>
+          <p style={{ marginTop: "15px" }}>
+            <MailOutlined style={{ padding: "0px 5px", fontSize: "22px" , marginTop:"10px"}} />
+            info@invest-egypt.com
+          </p>
+          <p style={{ marginTop: "10px" }}>
+            <PhoneOutlined style={{ padding: "0px 5px", fontSize: "22px" }} />{" "}
+            01283188882
+          </p>
         </div>
       </div>
 
       <div className="Footer" style={{ margin: "0px auto", fontSize: "18px" }}>
         <p style={{ fontSize: "18px", textAlign: "center" }}>
-          {" "}
+          
           {t("FooterFinal")}
         </p>
       </div>

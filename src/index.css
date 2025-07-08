@@ -408,7 +408,7 @@ hr {
   padding: 20px 0px;
   background-image: url(../src//Image/footer-map.ffc07f6682a8f08660cd.webp);
   background-color: var(--backgroundHeader);
-  box-shadow: 4px 0px 15px 5px var(--backgroundHeader);
+  box-shadow: 0px 0px 10px 2px var(--backgroundHeader);
 }
 .Footer a,
 .Footer p,
