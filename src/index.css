@@ -83,8 +83,8 @@ hr {
 
 .HomeSection {
   background-image: linear-gradient(
-     var(--backgroundImage),
-    var(--backgroundImage)
+      var(--backgroundImage),
+      var(--backgroundImage)
     ),
     url(./Image/Untitled-1.png-2.webp);
   background-size: cover;
@@ -97,8 +97,8 @@ hr {
 
 .HomeSectionEN {
   background-image: linear-gradient(
-    var(--backgroundImage),
-    var(--backgroundImage)
+      var(--backgroundImage),
+      var(--backgroundImage)
     ),
     url(./Image/Untitled-1.webp);
   background-size: cover;
@@ -229,7 +229,7 @@ hr {
 .textSection1 p {
   color: #ffffff;
 }
-.textSection1 p{
+.textSection1 p {
   opacity: 0.8;
 }
 
@@ -406,6 +406,14 @@ hr {
   font-size: 11px;
   border-top: 1px solid var(--colorBorder);
   padding: 20px 0px;
+  background-image: url(../src//Image/footer-map.ffc07f6682a8f08660cd.webp);
+  background-color: var(--backgroundHeader);
+  box-shadow: 4px 0px 15px 5px var(--backgroundHeader);
+}
+.Footer a,
+.Footer p,
+.Footer h1 {
+  color: white !important;
 }
 
 @media (max-width: 767px) {
@@ -462,24 +470,20 @@ hr {
   .SectionEight .Text {
     width: 80%;
   }
-
 }
-    .Footer  img{
-   margin: 0px auto;
-  }
+.Footer img {
+  margin: 0px auto;
+}
 @media (max-width: 730px) {
   .Footer {
-   flex-direction: column !important;
-   gap: 20px;
+    flex-direction: column !important;
+    gap: 20px;
   }
-
-
 }
 
 @media (min-width: 768px) and (max-width: 1300px) {
-  .iconSectionNine{
+  .iconSectionNine {
     width: 10% !important;
-
   }
   .anminationOne {
     margin: 0px -165px;
@@ -615,8 +619,6 @@ hr {
 .no-wrap-row {
   display: flex !important;
   flex-wrap: nowrap !important;
-
-
 }
 
 .no-wrap-row .ant-col {
