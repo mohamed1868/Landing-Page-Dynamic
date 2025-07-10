@@ -29,6 +29,7 @@ export default function Home() {
   const { darkMode, lightMode, dark } = useContext(contextDarkMode);
   const [menuOpen, setMenuOpen] = useState(false);
   const HomeSection = useRef();
+  
 
   useEffect(() => {
     window.document.dir = i18n.dir();
@@ -76,6 +77,13 @@ export default function Home() {
     HomeSection.current.classList.remove("HomeSectionEN");
     HomeSection.current.classList.add("HomeSection");
   };
+
+  const handleScroll = () => {
+  const section = document.getElementById("SectionEight");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
   return (
     <>
@@ -210,11 +218,9 @@ export default function Home() {
                 <p style={{ fontSize: "18px" }}>{t("TitleTwoSectionHome")}</p>
                 <Row gutter={20} className="SectionButtonOne no-wrap-row">
                   <Col>
-                    <Link href="#SectionEight">
-                      <button className="primary-button">
+                      <button onClick={handleScroll} className="primary-button">
                         {t("StartYourInvestment")}
                       </button>
-                    </Link>
                   </Col>
                   <Col>
                     <button onClick={openWhatsApp} className="primary-button">

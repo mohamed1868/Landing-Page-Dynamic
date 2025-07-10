@@ -15,7 +15,7 @@ export default function SectionFive() {
         <div className='SectionFive' data-aos="fade-down">
             <h1 style={{ textAlign: "center", fontSize: '25px' }}>{t("sectionFiveTitle")}</h1>
 
-            <Row style={{ gap: "25px", justifyContent: "center", marginTop: "80px" }}>
+            <Row style={{ gap: "25px", justifyContent: "center", marginTop: "60px" }}>
                 <Col xs={16} md={11} xl={7} className="SectionSevenContaier1">
                     <div style={{ display: "flex" }} >
                         <div className="iconSection">

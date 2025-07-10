@@ -10,7 +10,7 @@ export default function SectionFour() {
         <h1 style={{ textAlign: "center" }}> {t("sectionFourTitle")} </h1>
         <Row
           justify="center"
-          style={{ gap: "20px", marginTop: "40px" }}
+          style={{ gap: "20px", marginTop: "20px" }}
         >
           <Col xs={20} md={18} lg={12} >
             <Row style={{ gap: "15px" }}>

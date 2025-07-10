@@ -9,7 +9,7 @@ export default function SectionTwo() {
       <div data-aos="fade-down" className="SectionTwo">
         <div>
           <h1 >{t("WhatisVariianceholding")}</h1>
-          <div className="SectionOneContainer" style={{ display: "flex", marginTop: "60px" }}>
+          <div className="SectionOneContainer" style={{ display: "flex", marginTop: "20px" }}>
             <div style={{ width: "14%", margin: "0px 2px" }} className="iconSection">
               <DotLottieReact
                 src="https://lottie.host/fd11ed4c-d0da-42f1-bfd9-fc4757624229/86HZF3Gdkw.lottie"
