@@ -37,7 +37,6 @@ export default function SectionNine() {
         label: t("faq8Label"),
         children: <p >
 
-            <p> {t("faq8Step1")  }  </p>
             <p>{t("faq8Step2")  }</p>
             <p>{t("faq8Step3")  }</p>
             <p>{t("faq8Step4")  }</p>

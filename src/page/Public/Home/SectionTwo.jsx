@@ -10,9 +10,9 @@ export default function SectionTwo() {
         <div>
           <h1 >{t("WhatisVariianceholding")}</h1>
           <div className="SectionOneContainer" style={{ display: "flex", marginTop: "20px" }}>
-            <div style={{ width: "14%", margin: "0px 2px" }} className="iconSection">
+            <div style={{ width: "14%", margin: "1px 2px" }} className="iconSection">
               <DotLottieReact
-                src="https://lottie.host/fd11ed4c-d0da-42f1-bfd9-fc4757624229/86HZF3Gdkw.lottie"
+                src="https://lottie.host/59eecbd2-a12f-46fe-809d-f902063dd34d/UPRIZIhLCl.lottie"
                 loop
                 autoplay
               />
